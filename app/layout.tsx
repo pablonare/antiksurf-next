@@ -1,4 +1,7 @@
-
+import "@/src/styles/reset.css";
+import "@/src/styles/variables.css";
+import "@/src/styles/typography.css";
+import "@/src/styles/patterns.css";
 import "@/src/styles/globals.css";
 
 import Header from "@/components/layout/Header/Header";
