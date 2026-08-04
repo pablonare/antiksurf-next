@@ -1,8 +1,9 @@
 @font-face {
   font-family: "AntikFont";
-  src: url("../assets/fonts/AntikFont.otf") format("opentype");
+  src: url("../assets/fonts/AntikFont.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
