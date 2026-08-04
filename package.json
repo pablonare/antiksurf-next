@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^16.3.0",
     "lucide-react": "^1.28.0",
     "next": "16.3.0",
     "react": "19.2.8",
@@ -23,5 +24,21 @@
     "eslint-config-next": "16.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "browserslist": {
+    "production": [
+      "last 2 versions",
+      "not ie <= 11",
+      "not ie_mob <= 11",
+      "not kaios <= 3.1",
+      "not op_mob <= 80",
+      "not baidu <= 13",
+      "not bb <= 10",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 safari version"
+    ]
   }
 }
