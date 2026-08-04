@@ -64,7 +64,7 @@ function UpcomingTrips() {
                 <div className={styles.actions}>
                   
                   <Button as={Link} href="/surftrips" variant="secondary">
-                    More info
+                    View All Trips
                   </Button>
 
                   <Button as="a" href="https://wa.me/212644078565" variant="primary">
