@@ -1,0 +1,13 @@
+.section {
+  padding-block: var(--space-section-md);
+}
+
+.none  { padding-block: 0; }
+.md    { padding-block: 48px; }
+
+@media (max-width: 768px) {
+  .md {
+    padding-block: calc(var(--space-section-md) * 1.8);
+  }
+
+}

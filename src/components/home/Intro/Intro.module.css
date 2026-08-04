@@ -1,0 +1,16 @@
+.intro {
+  padding: 80px 20px;
+}
+
+
+.intro p {
+  max-width: 800px;
+  
+  margin: 48px auto 0 auto;
+
+  text-align: center;
+
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+
+  line-height: 1.6;
+}

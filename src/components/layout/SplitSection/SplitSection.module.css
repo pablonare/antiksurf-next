@@ -1,0 +1,25 @@
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: stretch;
+}
+
+.reverse {
+    direction: rtl;
+}
+
+.reverse > * {
+    direction: ltr;
+}
+
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .reverse {
+        direction: ltr;
+    }
+}

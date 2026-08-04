@@ -1,0 +1,28 @@
+.content {
+    align-self: start;
+}
+
+.media {
+    display: grid;
+    align-self: start;
+
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    background: var(--card-paper);
+    box-shadow: none;
+
+    object-fit: cover;
+    overflow: hidden;
+    
+    scroll-snap-align: start;
+    transition:
+        transform var(--card-transition-slow),
+        box-shadow var(--card-transition-slow);
+}
+
+.image {
+    width: 100%;
+    height: clamp(320px, 34vw, 460px);
+    object-fit: cover;
+    overflow: hidden;
+}

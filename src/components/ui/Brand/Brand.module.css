@@ -1,0 +1,38 @@
+.brand {
+
+  text-decoration: none;
+
+  color: var(--color-black);
+
+  font-size: clamp(1.2rem, 1.5vw, 3rem);
+
+  font-weight: 900;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+.brand h1 {
+
+  text-decoration: none;
+
+  color: var(--color-black);
+
+  font-size: clamp(1.2rem, 1.5vw, 3rem);
+
+  font-weight: 900;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+
+.brand:hover {
+    font-size: clamp(1.2rem, 1.6vw, 3rem);
+}
