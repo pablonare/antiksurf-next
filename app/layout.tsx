@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header/Header";
 import Footer from "@/components/layout/Footer/Footer";
 import WhatsAppButton from "@/components/ui/WhatsAppButton/WhatsAppButton";
 
+
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL("https://antiksurf.com"),
@@ -60,6 +61,7 @@ export const metadata: Metadata = {
   },
 };
 
+
 import localFont from "next/font/local";
 
 const antikFont = localFont({
@@ -68,6 +70,7 @@ const antikFont = localFont({
   weight: "400",
   style: "normal",
 });
+
 
 export default function RootLayout({
   children,
@@ -79,7 +82,9 @@ export default function RootLayout({
       <body>
         <Header />
 
-        {children}
+        <main>
+          {children}
+        </main>
 
         <Footer />
         <WhatsAppButton />
