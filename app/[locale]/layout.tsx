@@ -1,13 +1,15 @@
-import "@/src/styles/reset.css";
-import "@/src/styles/variables.css";
-import "@/src/styles/typography.css";
-import "@/src/styles/patterns.css";
-import "@/src/styles/globals.css";
+import "@/styles/reset.css";
+import "@/styles/variables.css";
+import "@/styles/typography.css";
+import "@/styles/patterns.css";
+import "@/styles/globals.css";
 
 import Header from "@/components/layout/Header/Header";
 import Footer from "@/components/layout/Footer/Footer";
 import WhatsAppButton from "@/components/ui/WhatsAppButton/WhatsAppButton";
 
+import {NextIntlClientProvider} from "next-intl";
+import {getMessages} from "next-intl/server";
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
@@ -68,29 +70,36 @@ export const metadata: Metadata = {
 import localFont from "next/font/local";
 
 const antikFont = localFont({
-  src: "../src/assets/fonts/AntikFont.woff2",
+  src: "../../src/assets/fonts/AntikFont.woff2",
   display: "swap",
   weight: "400",
   style: "normal",
 });
 
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body>
-        <Header />
+        <NextIntlClientProvider messages={messages}>
+          <Header />
 
-        <main>
-          {children}
-        </main>
+          <main>
+            {children}
+          </main>
 
-        <Footer />
-        <WhatsAppButton />
+          <Footer />
+          <WhatsAppButton />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

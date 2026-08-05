@@ -1,3 +1,5 @@
+import { getTranslations } from "next-intl/server";
+
 import Container from "../../../components/ui/Container/Container";
 import Section from "../../../components/layout/Section/Section";
 import SplitSection from "../../../components/layout/SplitSection/SplitSection";
@@ -6,7 +8,12 @@ import studioImage from "../../../assets/images/surftrips/classic-studio/classic
 
 import styles from "./Studio.module.css";
 
-function Studio() {
+
+export default async function Studio() {
+
+  const t = await getTranslations("surftrips.studio");
+
+
   return (
     <Section>
       <Container>
@@ -16,27 +23,28 @@ function Studio() {
           <div className={styles.content}>
 
             <h2 className="section-title">
-              Classic Studio
+              {t("title")}
             </h2>
 
-            <p className="section-subtitle">
-              Capture the experience.<br></br><br></br> 
-              Issam from Classic Studio is part of our team and joins us 
-              throughout the trip alongside our surf coaches. He'll be capturing 
-              the best moments in and out of the water, so you'll head home with 
-              professional photos and videos of an unforgettable trip
 
+            <p className="section-subtitle">
+              {t("description")}
             </p>
+
 
           </div>
 
+
           <div className={styles.media}>
+
             <img
               className={styles.image}
               src={studioImage.src}
-              alt="Issam from Classic Studio"
+              alt={t("imageAlt")}
             />
+
           </div>
+
 
         </SplitSection>
 
@@ -44,5 +52,3 @@ function Studio() {
     </Section>
   );
 }
-
-export default Studio;

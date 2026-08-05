@@ -1,0 +1,28 @@
+{
+  "intro": {
+    "description": "Antik Surf Club está situado en el corazón de la medina de Asilah, cerca de algunos de los mejores spots de surf del norte de Marruecos. En Antik encontrarás clases de surf, alquiler de tablas y surf trips que te llevarán directamente a la esencia."
+  },
+  "upcomingTrips": {
+    "title": "Próximos Surftrips 2026",
+    "subtitle": "Únete a nuestros Surf Trips en Asilah, Marruecos",
+    "dates": "Fechas",
+    "full": "Completo",
+    "available": "Disponible",
+    "viewTrips": "Ver Todos los Trips",
+    "bookNow": "Reservar Ahora",
+    "imageAlt": "Surf trips en Asilah Marruecos"
+  },
+  "surfLessons": {
+    "title": "Clases de Surf",
+    "description": "Nuestras clases de surf están diseñadas para todos los niveles, desde principiantes hasta surfistas experimentados. Cada sesión incluye teoría, práctica en el agua y correcciones personalizadas.",
+    "button": "Reservar clases de surf",
+    "imageAlt": "Clases de surf en Marruecos"
+  },
+  "rentals": {
+    "title": "Alquiler de tablas de surf",
+    "description": "Ofrecemos una amplia variedad de tablas de surf en alquiler, adaptadas a todos los niveles. Nuestro servicio incluye tablas de calidad, neoprenos y accesorios para que disfrutes de la mejor experiencia de surf.",
+    "button": "Contáctanos",
+    "imageAlt": "Alquiler de tablas de surf en Marruecos",
+    "pricesImageAlt": "Precios del alquiler de tablas de surf"
+  }
+}
