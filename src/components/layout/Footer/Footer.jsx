@@ -2,7 +2,7 @@ import Container from "../../ui/Container/Container";
 import Link from "next/link";
 import Logo from "../../../assets/images/common/logo-antik.png";
 import styles from "./Footer.module.css";
-
+import LanguageSwitcher from "../../ui/LanguageSwitcher/LanguageSwitcher"; 
 
 function Footer() {
     return (
@@ -61,7 +61,12 @@ function Footer() {
                     </address>
               </div>
 
+              <div className={styles.language}>
+                <LanguageSwitcher />
+              </div>
+
               <div className={styles.bottom}>
+                
                    <p>
                         © 2026 Antik Surf Club · Website designed & developed by{" "}
                         <a href="https://nalabsolutions.com" target="_blank" rel="noopener noreferrer">

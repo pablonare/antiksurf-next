@@ -1,0 +1,90 @@
+{
+  "hero": {
+    "kicker": "Antik Surf Club presenta",
+    "title": "Surf Trips en Asilah, Marruecos",
+    "subtitle": "Grupos reducidos • Guías locales • Surf, cultura y experiencias inolvidables.",
+    "viewTrips": "Ver viajes",
+    "bookNow": "Reservar"
+  },
+  "upcomingTrips": {
+    "kicker": "Próximos Surf Trips",
+    "title": "Elige tus fechas y asegura tu lugar con antelación"
+  },
+  "included": {
+    "title": "Qué está incluido",
+    "items": {
+      "accommodation": "Alojamiento",
+      "meals": "Comidas (desayuno, comida y cena)",
+      "transport": "Transporte a la playa",
+      "surf": "Clases de surf y equipo",
+      "studio": "Estudio clásico",
+      "experiences": "Experiencias locales"
+    },
+    "notIncluded": {
+      "title": "No incluido",
+      "subtitle": "Organízalo por separado",
+      "items": {
+        "flights": "Vuelos o ferry a Marruecos",
+        "alcohol": "Bebidas alcohólicas",
+        "insurance": "Seguro médico / de viaje"
+      }
+    }
+  },
+  "surfSpots": {
+    "title": "Surf Spots",
+    "description": "Surfea las mejores condiciones todos los días.Cada mañana, revisaremos las olas en la playa justo frente al surf club. Si las condiciones son buenas, ahí es donde surfearemos. Si otro spot funciona mejor, nos subiremos a la furgoneta y nos dirigiremos allí. Vigilamos el oleaje, el viento y las mareas todos los días, para que siempre estés surfeando las mejores condiciones disponibles, no solo quedándote en la misma playa.",
+    "imageAlt": "Surf spots en Asilah Marruecos"
+  },
+  "equipment": {
+    "title": "Clases de surf y equipo",
+    "description": "En el club, contamos con un excelente quiver con una variedad de tablas de surf adecuadas para todos los niveles. Ya seas principiante o avanzado, tenemos tablas divertidas y diversas diseñadas para maximizar tu tiempo en el agua.",
+    "description2": "Nuestro equipo siempre está disponible para ayudarte a elegir la mejor opción según las condiciones y tu nivel de habilidad. Las clases se realizan por las mañanas cuando las condiciones son mejores para que todos puedan practicar la técnica. Por las tardes, es tiempo de surf libre, donde puedes practicar lo que has aprendido y probar cosas nuevas.",
+    "imageAlt": "Equipo de surf en el club"
+  },
+  "studio": {
+    "title": "Classic Studio",
+    "description": "Captura la experiencia.Issam de Classic Studio forma parte de nuestro equipo y nos acompaña durante todo el viaje junto a nuestros entrenadores de surf. Capturará los mejores momentos dentro y fuera del agua, para que vuelvas a casa con fotos y vídeos profesionales de un viaje inolvidable.",
+    "imageAlt": "Issam de Classic Studio"
+  },
+   "discover": {
+    "title": "Descubre Asilah",
+    "description": "Un tranquilo pueblo atlántico con arte, sabor y mucho carácter.Asilah es un pequeño pueblo pesquero situado a solo 45 km de Tánger, donde la vida transcurre a un ritmo más tranquilo. Su medina blanca, sus coloridos murales y sus vistas al océano hacen que sea un lugar que querrás explorar incluso después de salir del agua.<br/><br/>Después de surfear, puedes perderte por sus calles estrechas, tomar un café en la plaza principal, disfrutar de pescado fresco junto al mar o simplemente contemplar la puesta de sol sobre el Atlántico. Es un lugar tranquilo, auténtico y lleno de personalidad, el tipo de sitio que convierte un surf trip en una experiencia completa.",
+    "imageAlt": "Texturas y arquitectura de Asilah"
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "Todo lo que necesitas saber antes de reservar",
+    "items": [
+      {
+        "title": "¿Qué incluye un surf trip de Antik?",
+        "content": "Alojamiento, desayuno, comida y cena, clases de surf, experiencias culturales, fotografía submarina, transporte a todas las playas y material de surf."
+      },
+      {
+        "title": "¿Los viajes son adecuados para todos los niveles?",
+        "content": "Sí. Antik trabaja con diferentes spots de surf, tablas y una selección diaria de playas según las condiciones, para que tanto principiantes como surfistas más experimentados puedan disfrutar del viaje."
+      },
+      {
+        "title": "¿Cómo puedo reservar mi plaza?",
+        "content": "Se requiere un depósito del 50% por adelantado para confirmar la reserva. Los detalles restantes de organización se comparten con los participantes antes del viaje."
+      },
+      {
+        "title": "¿Cómo llego a Asilah?",
+        "content": "Puedes llegar en avión hasta Tánger y después tomar un taxi hasta Asilah, o llegar en ferry a Tánger y continuar en taxi hasta Asilah."
+      },
+      {
+        "title": "¿Qué ocurre antes de que empiece el viaje?",
+        "content": "Aproximadamente dos semanas antes de la salida, Antik crea un grupo de WhatsApp con toda la información del viaje, horarios, recomendaciones y una primera presentación del grupo."
+      },
+      {
+        "title": "¿Qué no está incluido?",
+        "content": "Los vuelos o transporte hasta Marruecos, el seguro médico o de viaje y las bebidas alcohólicas no están incluidos."
+      }
+    ]
+  },
+  "cta": {
+    "kicker": "Plazas limitadas",
+    "title": "¿Listo para tu próxima aventura de surf?",
+    "description": "Reserva tu plaza, únete al grupo de WhatsApp y empieza tu surf trip de Antik incluso antes de llegar a Asilah.",
+    "button": "Reserva tu plaza"
+  }
+}

@@ -6,7 +6,7 @@ import MenuIcon from "../../ui/Icon/MenuIcon";
 import CloseIcon from "../../ui/Icon/CloseIcon";
 import Brand from "../../ui/Brand/Brand"; // ajusta la ruta
 
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 
 function MobileMenu() {
 

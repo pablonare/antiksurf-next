@@ -1,20 +1,25 @@
+import { getTranslations } from "next-intl/server";
+
 import Container from "../../../components/ui/Container/Container";
 import trips from "./Trips";
 import TripCard from "./components/TripCard";
 import Section from "../../../components/layout/Section/Section";
+
 import styles from "./UpcomingTrips.module.css";
 
-function UpcomingTrips() {
+export default async function UpcomingTrips() {
+  const t = await getTranslations("surftrips.upcomingTrips");
+
   return (
-    <Section> 
+    <Section>
       <Container>
 
         <p className="section-kicker">
-          Upcoming Surf Trips
+          {t("kicker")}
         </p>
 
         <h2 className={`section-title ${styles.title}`}>
-          Choose your dates and secure your spot early
+          {t("title")}
         </h2>
 
         <div className={styles.grid}>
@@ -30,5 +35,3 @@ function UpcomingTrips() {
     </Section>
   );
 }
-
-export default UpcomingTrips;

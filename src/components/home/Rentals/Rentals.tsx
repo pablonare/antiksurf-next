@@ -1,3 +1,5 @@
+import { getTranslations } from "next-intl/server";
+
 import Container from "../../../components/ui/Container/Container";
 import Section from "../../../components/layout/Section/Section";
 
@@ -8,51 +10,51 @@ import Button from "../../../components/ui/Button/Button";
 
 import styles from "./Rentals.module.css";
 
-function Rentals() {
+export default async function Rentals() {
+  const t = await getTranslations("home.rentals");
+
   return (
     <Section>
       <Container>
-
         <SplitSection reverse={false}>
 
           <div className={styles.media}>
-            <img 
+            <img
               src={RentalsImage.src}
-              alt="Surfboard rentals in Morocco"
+              alt={t("imageAlt")}
             />
           </div>
 
           <div className={styles.content}>
 
             <h2 className="section-title">
-              Surfboard Rentals
+              {t("title")}
             </h2>
 
             <p className="section-subtitle">
-              We offer a wide range of surfboards for rent, suitable for all skill levels. 
-              Our rental service includes high-quality boards, wetsuits, and accessories 
-              to ensure you have the best surfing experience.
+              {t("description")}
             </p>
-              
+
             <img
-                className={styles.contentImage}
-                src={RentalPricesImage.src}
-                alt="Surfboard rentals"
+              className={styles.contentImage}
+              src={RentalPricesImage.src}
+              alt={t("pricesImageAlt")}
             />
 
             <div className={styles.actions}>
-              <Button as="a" href="https://wa.me/212644078565" variant="primary">
-                Contact Us 
+              <Button
+                as="a"
+                href="https://wa.me/212644078565"
+                variant="primary"
+              >
+                {t("button")}
               </Button>
             </div>
 
           </div>
 
         </SplitSection>
-
       </Container>
     </Section>
   );
 }
-
-export default Rentals;

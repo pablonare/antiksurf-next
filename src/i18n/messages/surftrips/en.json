@@ -1,0 +1,90 @@
+{
+  "hero": {
+    "kicker": "Antik Surf Club Presents",
+    "title": "Surf Trips in Asilah, Morocco",
+    "subtitle": "Small groups • Local guides • Surf, culture & unforgettable experiences.",
+    "viewTrips": "View Trips",
+    "bookNow": "Book Now"
+  },
+  "upcomingTrips": {
+    "kicker": "Upcoming Surf Trips",
+    "title": "Choose your dates and secure your spot early"
+  },
+  "included": {
+    "title": "What's Included",
+    "items": {
+      "accommodation": "Accommodation",
+      "meals": "Meals (breakfast, lunch and dinner)",
+      "transport": "Beach Transport",
+      "surf": "Surf Lessons & Equipment",
+      "studio": "Classic Studio",
+      "experiences": "Local Experiences"
+    },
+    "notIncluded": {
+      "title": "Not Included",
+      "subtitle": "Plan these separately",
+      "items": {
+        "flights": "Flights or ferry to Morocco",
+        "alcohol": "Alcoholic beverages",
+        "insurance": "Medical / travel insurance"
+      }
+    }
+  },
+  "surfSpots": {
+    "title": "Surf Spots",
+    "description": "Surf the best conditions every day.Every morning, we'll check the waves at the beach right in front of the surf club. If the conditions are good, that's where we'll surf. If another spot is working better, we'll jump in the van and head there instead. We keep an eye on the swell, wind and tides every day, so you're always surfing the best conditions available, not just sticking to the same beach.",
+    "imageAlt": "Surf spots in Asilah Morocco"
+  },
+  "equipment": {
+    "title": "Surf Lessons & Equipment",
+    "description": "At the club, we have an excellent quiver with a variety of surfboards suited to all levels. Whether you are a beginner or advanced, we have fun and diverse boards designed to maximize your time in the water.",
+    "description2": "Our team is always available to help you choose the best option according to the conditions and your skill level. Lessons take place in the mornings when conditions are best so everyone can practice technique. In the afternoons, it is free surfing time, where you can practice what you have learned and try new things.",
+    "imageAlt": "Surf equipment at the club"
+  },
+    "studio": {
+    "title": "Classic Studio",
+    "description": "Capture the experience.Issam from Classic Studio is part of our team and joins us throughout the trip alongside our surf coaches. He'll be capturing the best moments in and out of the water, so you'll head home with professional photos and videos of an unforgettable trip.",
+    "imageAlt": "Issam from Classic Studio"
+  },
+  "discover": {
+    "title": "Discover Asilah",
+    "description": "A quiet Atlantic town with art, flavour and strong character.Asilah is a small fishing town just 45 km from Tangier, where life moves at a slower pace. Its whitewashed medina, colourful street murals and ocean views make it a place you'll want to explore long after you've left the beach.<br/><br/>After surfing, you can wander through its narrow streets, stop for a coffee in the main square, enjoy fresh fish by the sea or simply watch the sunset over the Atlantic. It's peaceful, authentic and full of character, the kind of place that turns a surf trip into a complete experience.",
+    "imageAlt": "Textures and architecture in Asilah"
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "Everything you need before booking",
+    "items": [
+      {
+        "title": "What is included in Antik surf trips?",
+        "content": "Accommodation, breakfast, lunch and dinner, surf lessons, cultural experiences, underwater photography, transportation to all beaches and surf equipment."
+      },
+      {
+        "title": "Are the trips suitable for all levels?",
+        "content": "Yes. Antik works with a variety of surf spots, boards and daily spot selection so beginners and more experienced surfers can both enjoy the trip."
+      },
+      {
+        "title": "How do I reserve my spot?",
+        "content": "A 50% deposit in advance is required for reservations. The remaining planning details are shared with participants before the trip."
+      },
+      {
+        "title": "How do I get to Asilah?",
+        "content": "You can arrive by flight to Tangier plus taxi to Asilah, or by ferry to Tangier plus taxi to Asilah."
+      },
+      {
+        "title": "What happens before the trip starts?",
+        "content": "About two weeks before departure, Antik creates a WhatsApp group with detailed planning, schedules, recommendations and a first introduction to the group."
+      },
+      {
+        "title": "What is not included?",
+        "content": "Travel to and from Morocco, travel or medical insurance and alcoholic beverages are not included."
+      }
+    ]
+  },
+  "cta": {
+    "kicker": "Limited Spots",
+    "title": "Ready for your next surf adventure?",
+    "description": "Book your place, join the WhatsApp planning group and start your Antik surf trip before you even arrive in Asilah.",
+    "button": "Book Your Spot"
+  }
+}
