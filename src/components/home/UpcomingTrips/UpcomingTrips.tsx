@@ -44,26 +44,22 @@ export default async function UpcomingTrips() {
             <div className={styles.tripList}>
               {trips.map((trip) => (
                 <p key={trip.id} className={styles.trip}>
-                  <span className={styles.date}>
-                    {trip.dates}
-                  </span>
+                  <span className={styles.date}>{t(trip.dates)}</span>
 
                   {" | "}
 
-                  {trip.name}
+                  {t(trip.name)}
 
                   {" | "}
 
                   <span
                     className={`${styles.status} ${
-                      trip.status === "Full"
+                      trip.status === "full"
                         ? styles.full
                         : styles.available
                     }`}
                   >
-                    {trip.status === "Full"
-                      ? t("full")
-                      : t("available")}
+                    {t(trip.status)}
                   </span>
                 </p>
               ))}

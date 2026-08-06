@@ -1,4 +1,4 @@
-"use client";
+import { getTranslations } from "next-intl/server";
 
 import Container from "../../../components/ui/Container/Container";
 import Section from "../../../components/layout/Section/Section";
@@ -10,70 +10,46 @@ import accommodation4 from "../../../assets/images/surftrips/accommodation/accom
 
 import styles from "./Accommodation.module.css";
 
-import { useState } from "react";
-import type { StaticImageData } from "next/image";
+export default async function Accommodation() {
+  const t = await getTranslations("surftrips.accommodation");
 
-function Accommodation() {
-  const [selectedImage, setSelectedImage] = useState<StaticImageData | null>(null);
   return (
     <Section>
       <Container>
-        
-        <header className="section-title">
-          <h2>Accommodation</h2>
-        </header>
+        <h2 className="section-title">
+          {t("title")}
+        </h2>
 
         <p className="section-subtitle">
-          We stay at Antik Riad, a charming traditional house just 100
-          meters from the surf club. It becomes the meeting point for
-          breakfasts, planning, rest after surf sessions and the community
-          rhythm of the whole trip.
+          {t("description")}
         </p>
 
         <div className={styles.gallery}>
           <img
             className={styles.image}
             src={accommodation1.src}
-            alt="Accommodation photo 1"
-            onClick={() => setSelectedImage(accommodation1)}
+            alt={t("image1Alt")}
           />
+
           <img
             className={styles.image}
             src={accommodation2.src}
-            alt="Accommodation photo 2"
-            onClick={() => setSelectedImage(accommodation2)}
+            alt={t("image2Alt")}
           />
+
           <img
             className={styles.image}
             src={accommodation3.src}
-            alt="Accommodation photo 3"
-            onClick={() => setSelectedImage(accommodation3)}
+            alt={t("image3Alt")}
           />
+
           <img
             className={styles.image}
             src={accommodation4.src}
-            alt="Accommodation photo 4"
-            onClick={() => setSelectedImage(accommodation4)}
+            alt={t("image4Alt")}
           />
         </div>
-
-        {selectedImage && (
-          <div
-            className={styles.lightbox}
-            onClick={() => setSelectedImage(null)}
-          >
-            <img
-              className={styles.lightboxImage}
-              src={selectedImage.src}
-              alt=""
-              onClick={(e) => e.stopPropagation()}
-            />
-          </div>
-        )}
-
       </Container>
     </Section>
   );
 }
-
-export default Accommodation;

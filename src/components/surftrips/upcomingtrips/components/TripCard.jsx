@@ -1,8 +1,9 @@
 
+import { getTranslations } from "next-intl/server";
 import Button from "../../../../components/ui/Button/Button";
 import styles from "./TripCard.module.css";
 
-function TripCard({
+export default async function TripCard({
   image,
   alt,
   date,
@@ -13,30 +14,32 @@ function TripCard({
   buttonText,
   buttonLink,
 }) {
+  const t = await getTranslations("surftrips.upcomingTrips");
+
   return (
     <article className={styles.card}>
       <img
         className={styles.image}
         src={image.src}
-        alt={alt}
+        alt={t(alt)}
       />
 
       <div className={styles.body}>
-        <p className={styles.date}>{date}</p>
+        <p className={styles.date}>{t(date)}</p>
 
-        <h3 className={styles.title}>{title}</h3>
+        <h3 className={styles.title}>{t(title)}</h3>
 
         {price && (
           <p className={styles.price}>
-            {price}
+            {t(price)}
           </p>
         )}
 
-        <p className={styles.meta}>{meta}</p>
+        <p className={styles.meta}>{t(meta)}</p>
 
         {status === "full" ? (
           <span className={styles.badge}>
-            Full
+            {t("full")}
           </span>
         ) : (
           <Button
@@ -44,12 +47,10 @@ function TripCard({
             target="_blank"
             rel="noopener noreferrer"
           >
-            {buttonText}
+            {t(buttonText)}
           </Button>
         )}
       </div>
     </article>
   );
 }
-
-export default TripCard;

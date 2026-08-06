@@ -28,7 +28,15 @@ export default async function Discover() {
 
 
             <p className="section-subtitle">
-              {t("description")}
+              {t("description1")}
+            </p>
+
+            <p className="section-subtitle">
+              {t("description2")}
+            </p>
+
+            <p className="section-subtitle">
+              {t("description3")}
             </p>
 
 
