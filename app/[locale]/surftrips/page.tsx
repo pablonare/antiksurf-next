@@ -11,14 +11,19 @@ import Discover from "@/components/surftrips/discover/Discover";
 import Faq from "@/components/surftrips/faq/Faq";
 import Cta from "@/components/surftrips/cta/Cta";
 
-export const metadata: Metadata = {
-  title: "Surf Trips in Asilah, Morocco",
-  description:
-    "Surf trips in Asilah, Morocco with small groups, local guides, accommodation, surf lessons, cultural experiences and direct booking via Antik Surf Club.",
-  alternates: {
-    canonical: "/surftrips",
-  },
-};
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("surftrips.metadata");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: "/surftrips",
+    },
+  };
+}
 
 export default function Page() {
   return (

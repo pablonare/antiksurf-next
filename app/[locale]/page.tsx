@@ -4,11 +4,17 @@ import UpcomingTrips from "@/components/home/UpcomingTrips/UpcomingTrips";
 import SurfLessons from "@/components/home/SurfLessons/SurfLessons";
 import Rentals from "@/components/home/Rentals/Rentals";
 
-export const metadata = {
-  title: "Antik Surf Club | Surf Club in Asilah, Morocco",
-  description:
-    "Surf lessons, surf trips and unforgettable experiences in Asilah, Morocco.",
-};
+import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("home.metadata");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default function Page() {
   return (
