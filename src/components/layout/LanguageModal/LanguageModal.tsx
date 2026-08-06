@@ -11,7 +11,9 @@ export default function LanguageModal() {
   const [isOpen, setIsOpen] = useState(true);
 
   function changeLanguage(locale: "en" | "es" | "fr") {
-    setIsOpen(false);
+    setIsOpen(false)
+
+    document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000`;
 
     router.replace(pathname, { locale });
   }
