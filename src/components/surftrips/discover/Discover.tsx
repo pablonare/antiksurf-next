@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
 import Container from "../../../components/ui/Container/Container";
 import Section from "../../../components/layout/Section/Section";
@@ -45,10 +46,12 @@ export default async function Discover() {
 
           <div className={styles.media}>
 
-            <img
+            <Image
               className={styles.image}
-              src={discoverImage.src}
+              src={discoverImage}
               alt={t("imageAlt")}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
 
           </div>

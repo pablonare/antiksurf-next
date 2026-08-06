@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
 import Container from "../../ui/Container/Container";
 import SplitSection from "../../layout/SplitSection/SplitSection";
@@ -24,12 +25,14 @@ export default async function SurfLessons() {
         <SplitSection reverse={true}>
 
           <div className={styles.media}>
-            <img
-              src={LessonsImage.src}
+            <Image
+              src={LessonsImage}
               alt={t("imageAlt")}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className={styles.image}
             />
           </div>
-
 
           <div className={styles.content}>
 
@@ -41,12 +44,9 @@ export default async function SurfLessons() {
               {t("description")}
             </p>
 
-
             <Accordion items={translatedLessons} />
 
-
             <div className={styles.actions}>
-
               <Button
                 as="a"
                 href="https://wa.me/212644078565"
@@ -54,7 +54,6 @@ export default async function SurfLessons() {
               >
                 {t("button")}
               </Button>
-
             </div>
 
           </div>

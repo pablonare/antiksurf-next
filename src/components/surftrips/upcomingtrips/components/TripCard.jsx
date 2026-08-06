@@ -1,5 +1,6 @@
-
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+
 import Button from "../../../../components/ui/Button/Button";
 import styles from "./TripCard.module.css";
 
@@ -18,16 +19,26 @@ export default async function TripCard({
 
   return (
     <article className={styles.card}>
-      <img
-        className={styles.image}
-        src={image.src}
-        alt={t(alt)}
-      />
+
+      <div className={styles.imageCard}>
+        <Image
+          className={styles.image}
+          src={image}
+          alt={t(alt)}
+          fill
+          sizes="(max-width: 768px) 90vw, 25vw"
+        />
+      </div>
 
       <div className={styles.body}>
-        <p className={styles.date}>{t(date)}</p>
 
-        <h3 className={styles.title}>{t(title)}</h3>
+        <p className={styles.date}>
+          {t(date)}
+        </p>
+
+        <h3 className={styles.title}>
+          {t(title)}
+        </h3>
 
         {price && (
           <p className={styles.price}>
@@ -35,7 +46,9 @@ export default async function TripCard({
           </p>
         )}
 
-        <p className={styles.meta}>{t(meta)}</p>
+        <p className={styles.meta}>
+          {t(meta)}
+        </p>
 
         {status === "full" ? (
           <span className={styles.badge}>
@@ -50,7 +63,9 @@ export default async function TripCard({
             {t(buttonText)}
           </Button>
         )}
+
       </div>
+
     </article>
   );
 }

@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
 import Container from "../../../components/ui/Container/Container";
 import Section from "../../../components/layout/Section/Section";
@@ -19,9 +20,12 @@ export default async function Rentals() {
         <SplitSection reverse={false}>
 
           <div className={styles.media}>
-            <img
-              src={RentalsImage.src}
+            <Image
+              src={RentalsImage}
               alt={t("imageAlt")}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className={styles.image}
             />
           </div>
 
@@ -35,10 +39,13 @@ export default async function Rentals() {
               {t("description")}
             </p>
 
-            <img
+            <Image
               className={styles.contentImage}
-              src={RentalPricesImage.src}
+              src={RentalPricesImage}
               alt={t("pricesImageAlt")}
+              width={500}
+              height={300}
+              sizes="(max-width: 768px) 100vw, 500px"
             />
 
             <div className={styles.actions}>

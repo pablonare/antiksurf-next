@@ -1,4 +1,5 @@
-import {getTranslations} from "next-intl/server";
+import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
 import Container from "../../ui/Container/Container";
 import Section from "../../layout/Section/Section";
@@ -7,7 +8,7 @@ import SplitSection from "../../layout/SplitSection/SplitSection";
 import surftripsImage from "../../../assets/images/common/surftrips.webp";
 import Button from "../../ui/Button/Button";
 
-import {Link} from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 
 import trips from "./Trips";
 import styles from "./UpcomingTrips.module.css";
@@ -21,9 +22,12 @@ export default async function UpcomingTrips() {
         <SplitSection>
 
           <div className={styles.media}>
-            <img
-              src={surftripsImage.src}
+            <Image
+              src={surftripsImage}
               alt={t("imageAlt")}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className={styles.image}
             />
           </div>
 
@@ -44,7 +48,9 @@ export default async function UpcomingTrips() {
             <div className={styles.tripList}>
               {trips.map((trip) => (
                 <p key={trip.id} className={styles.trip}>
-                  <span className={styles.date}>{t(trip.dates)}</span>
+                  <span className={styles.date}>
+                    {t(trip.dates)}
+                  </span>
 
                   {" | "}
 

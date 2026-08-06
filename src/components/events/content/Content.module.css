@@ -10,24 +10,36 @@
   line-height: 1.6;
 }
 
-.media{
-
+.media {
   display: flex;
-  gap: 18px;
-  overflow-x: auto;
-  overflow-y: visible;   /* opcional: por claridad, aunque no cambia el comportamiento forzado */
-  padding-block: 10px;
-  scroll-snap-type: x proximity;
 
+  gap: 18px;
+
+  overflow-x: auto;
+  overflow-y: visible;
+
+  padding-block: 10px;
+
+  scroll-snap-type: x proximity;
 }
 
+
 .media img {
-  
-  flex: 0 0 calc((100% - 54px) / 3);
+  flex: 0 0 calc((100% - 36px) / 3);
+
+  width: 100%;
+
+  height: 340px;
+
   min-width: 220px;
-  min-height: 340px;
+
   display: block;
 
+  object-fit: cover;
+
+  border-radius: var(--card-radius);
+
+  scroll-snap-align: start;
 }
 
 
