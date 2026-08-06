@@ -4,7 +4,7 @@ import {NextResponse} from "next/server";
 
 const handleI18nRouting = createMiddleware(routing);
 
-export default function proxy(request: Request) {
+export default function proxy(request: NextRequest) {
   const url = new URL(request.url);
   const pathname = url.pathname;
 
