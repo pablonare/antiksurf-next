@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Container from "../../../components/ui/Container/Container";
 import styles from "./Content.module.css";
 
@@ -25,9 +27,25 @@ export default async function Content() {
 
 
       <div className={styles.media}>
-        <img src={AtlantikAsilah.src} alt="" />
-        <img src={AtlantikCanos.src} alt="" />
-        <img src={AtlantikHendaya.src} alt="" />
+
+        <Image
+          src={AtlantikAsilah}
+          alt="Atlantik Asilah"
+          sizes="(max-width: 768px) 100vw, 33vw"
+        />
+
+        <Image
+          src={AtlantikCanos}
+          alt="Atlantik Caños"
+          sizes="(max-width: 768px) 100vw, 33vw"
+        />
+
+        <Image
+          src={AtlantikHendaya}
+          alt="Atlantik Hendaya"
+          sizes="(max-width: 768px) 100vw, 33vw"
+        />
+
       </div>
 
 
@@ -49,8 +67,19 @@ export default async function Content() {
 
 
       <div className={styles.gallery}>
-        <img src={AtlantikImage2.src} alt="Shapers meeting" />
-        <img src={AtlantikImage1.src} alt="Shapers meeting" />
+
+        <Image
+          src={AtlantikImage2}
+          alt="Shapers meeting"
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+
+        <Image
+          src={AtlantikImage1}
+          alt="Shapers meeting"
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+
       </div>
 
 

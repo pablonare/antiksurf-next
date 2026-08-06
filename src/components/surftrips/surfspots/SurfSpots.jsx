@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
 import Container from "../../../components/ui/Container/Container";
 import SplitSection from "../../../components/layout/SplitSection/SplitSection";
@@ -42,10 +43,12 @@ export default async function SurfSpots() {
 
           <div className={styles.media}>
 
-            <img
+            <Image
               className={styles.image}
-              src={surfSpotsImage.src}
+              src={surfSpotsImage}
               alt={t("imageAlt")}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
 
           </div>

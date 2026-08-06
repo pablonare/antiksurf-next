@@ -11,9 +11,9 @@
 
     box-shadow: var(--card-shadow);
 
-    transition: 
-    transform var(--card-transition-fast),
-    box-shadow var(--card-transition-fast);
+    transition:
+        transform var(--card-transition-fast),
+        box-shadow var(--card-transition-fast);
 }
 
 
@@ -22,11 +22,21 @@
     transform: translateY(-8px);
 }
 
-.image {
+
+.imageCard {
+    position: relative;
+
     width: 100%;
     aspect-ratio: 3.2 / 3;
+
+    overflow: hidden;
+}
+
+
+.image {
     object-fit: cover;
 }
+
 
 .body {
     display: flex;
@@ -36,6 +46,7 @@
     padding: 1.5rem;
     gap: 0.7rem;
 }
+
 
 .body > :last-child {
     margin-top: auto;

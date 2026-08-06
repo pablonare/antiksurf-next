@@ -1,7 +1,10 @@
 .hero {
-  min-height: calc(100vh);
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.image {
+  object-fit: cover;
+  object-position: center;
 }

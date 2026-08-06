@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
 import Container from "../../../components/ui/Container/Container";
 import Section from "../../../components/layout/Section/Section";
@@ -35,16 +36,17 @@ export default async function Studio() {
               {t("description2")}
             </p>
 
-
           </div>
 
 
           <div className={styles.media}>
 
-            <img
+            <Image
               className={styles.image}
-              src={studioImage.src}
+              src={studioImage}
               alt={t("imageAlt")}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
 
           </div>

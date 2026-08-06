@@ -1,0 +1,27 @@
+# Antik Surf Club
+
+Antik Surf Club is a surf club based in Asilah, Morocco, offering surf lessons, surf trips, surf equipment rentals and authentic surf experiences.
+
+## Website
+
+- https://antiksurf.com/
+
+## Languages
+
+- English: https://antiksurf.com/en
+- Español: https://antiksurf.com/es
+- Français: https://antiksurf.com/fr
+
+## Main pages
+
+- Surf Trips: https://antiksurf.com/en/surftrips
+- Surf Trips (Español): https://antiksurf.com/es/surftrips
+- Surf Trips (Français): https://antiksurf.com/fr/surftrips
+
+- Events: https://antiksurf.com/en/events
+- Events (Español): https://antiksurf.com/es/events
+- Events (Français): https://antiksurf.com/fr/events
+
+## About
+
+Antik Surf Club offers surf lessons, surf trips, rentals and surf experiences in Asilah, Morocco.

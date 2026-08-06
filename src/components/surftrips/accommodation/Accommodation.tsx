@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
 import Container from "../../../components/ui/Container/Container";
 import Section from "../../../components/layout/Section/Section";
@@ -13,9 +14,29 @@ import styles from "./Accommodation.module.css";
 export default async function Accommodation() {
   const t = await getTranslations("surftrips.accommodation");
 
+  const images = [
+    {
+      src: accommodation1,
+      alt: t("image1Alt"),
+    },
+    {
+      src: accommodation2,
+      alt: t("image2Alt"),
+    },
+    {
+      src: accommodation3,
+      alt: t("image3Alt"),
+    },
+    {
+      src: accommodation4,
+      alt: t("image4Alt"),
+    },
+  ];
+
   return (
     <Section>
       <Container>
+
         <h2 className="section-title">
           {t("title")}
         </h2>
@@ -25,30 +46,23 @@ export default async function Accommodation() {
         </p>
 
         <div className={styles.gallery}>
-          <img
-            className={styles.image}
-            src={accommodation1.src}
-            alt={t("image1Alt")}
-          />
-
-          <img
-            className={styles.image}
-            src={accommodation2.src}
-            alt={t("image2Alt")}
-          />
-
-          <img
-            className={styles.image}
-            src={accommodation3.src}
-            alt={t("image3Alt")}
-          />
-
-          <img
-            className={styles.image}
-            src={accommodation4.src}
-            alt={t("image4Alt")}
-          />
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={styles.card}
+            >
+              <Image
+                className={styles.image}
+                src={image.src}
+                alt={image.alt}
+                width={800}
+                height={600}
+                sizes="(max-width: 768px) 90vw, 25vw"
+              />
+            </div>
+          ))}
         </div>
+
       </Container>
     </Section>
   );

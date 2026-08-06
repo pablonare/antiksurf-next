@@ -1,34 +1,49 @@
 .gallery {
     display: flex;
     gap: 18px;
+
     overflow-x: auto;
-    overflow-y: visible;   /* opcional: por claridad, aunque no cambia el comportamiento forzado */
+    overflow-y: visible;
+
     padding-block: 10px;
+
     scroll-snap-type: x proximity;
 }
 
-.image {
+
+.card {
     flex: 0 0 calc((100% - 54px) / 4);
+
     min-width: 220px;
     min-height: 340px;
-    display: block;
 
     border: 1px solid var(--card-border);
     border-radius: var(--card-radius);
-    background: var(--card-paper);
-    box-shadow: none;
 
-    object-fit: cover;
+    background: var(--card-paper);
+
     overflow: hidden;
 
     scroll-snap-align: start;
+}
+
+
+.image {
+    width: 100%;
+    height: 340px;
+
+    display: block;
+
+    object-fit: cover;
+
     transition:
         transform var(--card-transition-fast),
         box-shadow var(--card-transition-fast);
 }
 
-.image:hover {
-   transform: scale(1.04);
+
+.card:hover .image {
+    transform: scale(1.03);
 }
 
 .lightbox {

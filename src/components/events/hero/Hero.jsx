@@ -32,7 +32,9 @@ export default async function Hero() {
           className={styles.gallery}
           controls
           loop
+          muted
           playsInline
+          preload="metadata"
           poster={AtlantikCover.src}
         >
 
