@@ -47,11 +47,11 @@
     "lessons": {
       "lesson1": {
         "title": "CLASES DE SURF (2 HORAS)",
-        "content1": "1 día de clase 300DH",
-        "content2": "2 días de clases 600DH",
-        "content3": "3 días de clases 850DH",
-        "content4": "4 días de clases 1100DH",
-        "content5": "5 días de clases 1300DH",
+        "content1": "1 clase 300DH",
+        "content2": "2 clases 600DH",
+        "content3": "3 clases 850DH",
+        "content4": "4 clases 1100DH",
+        "content5": "5 clases 1300DH",
         "content6": "4 o más personas 1250DH",
         "content7": "Las clases de más de 7 días deben consultarse."
       },

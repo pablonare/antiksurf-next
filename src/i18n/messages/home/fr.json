@@ -46,11 +46,11 @@
     "lessons": {
       "lesson1": {
         "title": "COURS DE SURF (2 HEURES)",
-        "content1": "1 jour de cours : 300 DH",
-        "content2": "2 jours de cours : 600 DH",
-        "content3": "3 jours de cours : 850 DH",
-        "content4": "4 jours de cours : 1100 DH",
-        "content5": "5 jours de cours : 1300 DH",
+        "content1": "1 cours : 300 DH",
+        "content2": "2 cours : 600 DH",
+        "content3": "3 cours : 850 DH",
+        "content4": "4 cours : 1100 DH",
+        "content5": "5 cours : 1300 DH",
         "content6": "À partir de 4 personnes : 1250 DH",
         "content7": "Pour les cours de plus de 7 jours, veuillez nous consulter."
       },

@@ -11,9 +11,11 @@ export default function LanguageModal() {
   const [isOpen, setIsOpen] = useState(true);
 
   function changeLanguage(locale: "en" | "es" | "fr") {
+    document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000`;
+
     setIsOpen(false);
 
-    router.replace(pathname, { locale });
+    window.location.href = `/${locale}${pathname}`;
   }
 
   if (!isOpen) return null;

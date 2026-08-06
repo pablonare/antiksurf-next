@@ -48,11 +48,11 @@
     "lessons": {
       "lesson1": {
         "title": "SURFING LESSONS (2 HOURS)",
-        "content1": "1 day lesson 300DH",
-        "content2": "2 day lessons 600DH",
-        "content3": "3 day lessons 850DH",
-        "content4": "4 day lessons 1100DH",
-        "content5": "5 day lessons 1300DH",
+        "content1": "1 lesson 300DH",
+        "content2": "2 lessons 600DH",
+        "content3": "3 lessons 850DH",
+        "content4": "4 lessons 1100DH",
+        "content5": "5 lessons 1300DH",
         "content6": "4+ people 1250DH",
         "content7": "Lessons longer than 7 days need to be consulted."
       },
