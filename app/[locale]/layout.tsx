@@ -13,11 +13,15 @@ import {getMessages} from "next-intl/server";
 
 import type { Metadata } from "next";
 
+import { cookies } from "next/headers";
+import LanguageModal from "@/components/layout/LanguageModal/LanguageModal";
+
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://antiksurf.com"),
 
   title: {
-    default: "Antik Surf Club | Surf Club in Asilah, Morocco",
+    default: "Antik Surf Club",
     template: "%s | Antik Surf Club",
   },
 
@@ -85,13 +89,20 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }>) {
+
   const { locale } = await params;
   const messages = await getMessages();
+
+  const cookieStore = await cookies();
+  const hasLocale = !!cookieStore.get("NEXT_LOCALE");
 
   return (
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
+
+          {!hasLocale && <LanguageModal key={locale} />}
+
           <Header />
 
           <main>
@@ -100,6 +111,7 @@ export default async function RootLayout({
 
           <Footer />
           <WhatsAppButton />
+
         </NextIntlClientProvider>
       </body>
     </html>
