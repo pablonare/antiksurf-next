@@ -1,27 +1,27 @@
 const trips = [
   {
     id: 1,
-    dates: "September 4–7",
-    name: "Trip Antik",
-    status: "Full",
+    dates: "trips.trip1.dates",
+    name: "trips.trip1.name",
+    status: "trips.trip1.status",
   },
   {
     id: 2,
-    dates: "29 September – 4 October",
-    name: "Trip Antik x It's Only Water",
-    status: "Available spots",
+    dates: "trips.trip2.dates",
+    name: "trips.trip2.name",
+    status: "trips.trip2.status",
   },
   {
     id: 3,
-    dates: "October 9–12",
-    name: "Trip Antik",
-    status: "Available spots",
+    dates: "trips.trip3.dates",
+    name: "trips.trip3.name",
+    status: "trips.trip3.status",
   },
   {
     id: 4,
-    dates: "December 4–8",
-    name: "Trip Antik",
-    status: "Available spots",
+    dates: "trips.trip4.dates",
+    name: "trips.trip4.name",
+    status: "trips.trip4.status",
   },
 ];
 

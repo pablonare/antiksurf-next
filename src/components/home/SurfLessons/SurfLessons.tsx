@@ -12,6 +12,11 @@ import styles from "./SurfLessons.module.css";
 export default async function SurfLessons() {
   const t = await getTranslations("home.surfLessons");
 
+  const translatedLessons = lessons.map((lesson) => ({
+    title: t(lesson.title),
+    content: lesson.content.map((item) => t(item)),
+  }));
+
   return (
     <section className={styles.section}>
       <Container>
@@ -37,7 +42,7 @@ export default async function SurfLessons() {
             </p>
 
 
-            <Accordion items={lessons} />
+            <Accordion items={translatedLessons} />
 
 
             <div className={styles.actions}>

@@ -8,7 +8,42 @@
   },
   "upcomingTrips": {
     "kicker": "Prochains Surf Trips",
-    "title": "Choisissez vos dates et réservez votre place à l'avance"
+    "title": "Choisissez vos dates et réservez votre place à l'avance",
+
+    "full": "",
+    "available": "Disponible",
+    "bookNow": "Réserver",
+    "moreInfo": "Visiter le site web",
+
+    "trips": {
+      "trip1": {
+        "alt": "Couverture du surf trip du 4 au 7 septembre 2026",
+        "date": "4–7 septembre 2026",
+        "title": "Trip Antik",
+        "price": "475€ avant le 1er août • 545€ tarif normal",
+        "meta": "4 jours · Complet"
+      },
+      "trip2": {
+        "alt": "Couverture du surf trip du 29 septembre au 4 octobre 2026",
+        "date": "29 septembre – 4 octobre 2026",
+        "title": "Trip Antik × It's Only Water",
+        "meta": "6 jours · Places disponibles"
+      },
+      "trip3": {
+        "alt": "Couverture du surf trip du 9 au 12 octobre 2026",
+        "date": "9–12 octobre 2026",
+        "title": "Trip Antik",
+        "price": "475€ avant le 1er août • 545€ tarif normal",
+        "meta": "4 jours · Places disponibles"
+      },
+      "trip4": {
+        "alt": "Couverture du surf trip du 4 au 8 décembre 2026",
+        "date": "4–8 décembre 2026",
+        "title": "Trip Antik",
+        "price": "580€ avant le 1er octobre • 650€ tarif normal",
+        "meta": "5 jours · Places disponibles"
+      }
+    }
   },
   "included": {
     "title": "Ce qui est inclus",
@@ -30,9 +65,18 @@
       }
     }
   },
+  "accommodation": {
+  "title": "Hébergement",
+  "description": "Nous séjournons à l'Antik Riad, une charmante maison traditionnelle située à seulement 100 mètres du surf club. C'est le lieu de rendez-vous pour les petits-déjeuners, la préparation des sessions, la détente après le surf et le partage de l'expérience avec le groupe.",
+  "image1Alt": "Hébergement à l'Antik Riad à Asilah",
+  "image2Alt": "Chambre à l'Antik Riad",
+  "image3Alt": "Espace commun de l'Antik Riad",
+  "image4Alt": "Terrasse de l'Antik Riad"
+  },
   "surfSpots": {
     "title": "Surf Spots",
-    "description": "Surfez les meilleures conditions tous les jours.Chaque matin, nous vérifierons les vagues sur la plage juste en face du surf club. Si les conditions sont bonnes, c'est là que nous surferons. Si un autre spot fonctionne mieux, nous monterons dans le van et nous y rendrons à la place. Nous surveillons la houle, le vent et les marées tous les jours, afin que vous surfiez toujours dans les meilleures conditions disponibles, et pas seulement en restant sur la même plage.",
+    "description1": "Surfez les meilleures conditions tous les jours.",
+    "description2": "Chaque matin, nous vérifierons les vagues sur la plage juste en face du surf club. Si les conditions sont bonnes, c'est là que nous surferons. Si un autre spot fonctionne mieux, nous monterons dans le van et nous y rendrons à la place. Nous surveillons la houle, le vent et les marées tous les jours, afin que vous surfiez toujours dans les meilleures conditions disponibles, et pas seulement en restant sur la même plage.",
     "imageAlt": "Surf spots à Asilah Maroc"
   },
   "equipment": {
@@ -43,12 +87,15 @@
   },
   "studio": {
     "title": "Classic Studio",
-    "description": "Capturez l'expérience.Issam de Classic Studio fait partie de notre équipe et nous accompagne tout au long du voyage avec nos coachs de surf. Il capturera les meilleurs moments dans et hors de l'eau, afin que vous repartiez avec des photos et vidéos professionnelles d'un voyage inoubliable.",
+    "description1": "Capturez l'expérience.",
+    "description2": "Issam de Classic Studio fait partie de notre équipe et nous accompagne tout au long du voyage avec nos coachs de surf. Il capturera les meilleurs moments dans et hors de l'eau, afin que vous repartiez avec des photos et vidéos professionnelles d'un voyage inoubliable.",
     "imageAlt": "Issam de Classic Studio"
   },
   "discover": {
     "title": "Découvrir Asilah",
-    "description": "Une ville atlantique paisible avec de l'art, des saveurs et beaucoup de caractère.Asilah est une petite ville de pêcheurs située à seulement 45 km de Tanger, où la vie avance à un rythme plus tranquille. Sa médina blanche, ses fresques colorées et ses vues sur l'océan en font un endroit que vous aurez envie d'explorer bien après avoir quitté la plage.<br/><br/>Après le surf, vous pourrez vous promener dans ses ruelles, prendre un café sur la place principale, déguster du poisson frais au bord de la mer ou simplement admirer le coucher du soleil sur l'Atlantique. C'est un lieu paisible, authentique et plein de caractère, le genre d'endroit qui transforme un surf trip en une expérience complète.",
+    "description1": "Une ville atlantique paisible avec de l'art, des saveurs et beaucoup de caractère.",
+    "description2": "Asilah est une petite ville de pêcheurs située à seulement 45 km de Tanger, où la vie avance à un rythme plus tranquille. Sa médina blanche, ses fresques colorées et ses vues sur l'océan en font un endroit que vous aurez envie d'explorer bien après avoir quitté la plage.",
+    "description3": "Après le surf, vous pourrez vous promener dans ses ruelles, prendre un café sur la place principale, déguster du poisson frais au bord de la mer ou simplement admirer le coucher du soleil sur l'Atlantique. C'est un lieu paisible, authentique et plein de caractère, le genre d'endroit qui transforme un surf trip en une expérience complète.",
     "imageAlt": "Textures et architecture d'Asilah"
   },
   "faq": {
@@ -77,7 +124,7 @@
       },
       {
         "title": "Qu'est-ce qui n'est pas inclus ?",
-        "content": "Le transport jusqu'au Maroc, l'assurance voyage ou médicale ainsi que les boissons alcoolisées ne sont pas inclus."
+        "content": "Le transport jusqu'à Asilah, l'assurance voyage ou médicale ainsi que les boissons alcoolisées ne sont pas inclus."
       }
     ]
   },

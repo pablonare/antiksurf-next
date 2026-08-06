@@ -8,16 +8,51 @@
   },
   "upcomingTrips": {
     "kicker": "Próximos Surf Trips",
-    "title": "Elige tus fechas y asegura tu lugar con antelación"
+    "title": "Elige tus fechas y asegura tu plaza con antelación",
+
+    "full": "",
+    "available": "Disponible",
+    "bookNow": "Reservar",
+    "moreInfo": "Visitar página web",
+
+    "trips": {
+      "trip1": {
+        "alt": "Portada del surf trip del 4 al 7 de septiembre de 2026",
+        "date": "4–7 de septiembre de 2026",
+        "title": "Trip Antik",
+        "price": "475€ antes del 1 de agosto • 545€ precio normal",
+        "meta": "4 días · Completo"
+      },
+      "trip2": {
+        "alt": "Portada del surf trip del 29 de septiembre al 4 de octubre de 2026",
+        "date": "29 de septiembre – 4 de octubre de 2026",
+        "title": "Trip Antik × It's Only Water",
+        "meta": "6 días · Plazas disponibles"
+      },
+      "trip3": {
+        "alt": "Portada del surf trip del 9 al 12 de octubre de 2026",
+        "date": "9–12 de octubre de 2026",
+        "title": "Trip Antik",
+        "price": "475€ antes del 1 de agosto • 545€ precio normal",
+        "meta": "4 días · Plazas disponibles"
+      },
+      "trip4": {
+        "alt": "Portada del surf trip del 4 al 8 de diciembre de 2026",
+        "date": "4–8 de diciembre de 2026",
+        "title": "Trip Antik",
+        "price": "580€ antes del 1 de octubre • 650€ precio normal",
+        "meta": "5 días · Plazas disponibles"
+      }
+    }
   },
   "included": {
-    "title": "Qué está incluido",
+    "title": "¿Qué incluye el viaje?",
     "items": {
       "accommodation": "Alojamiento",
       "meals": "Comidas (desayuno, comida y cena)",
       "transport": "Transporte a la playa",
       "surf": "Clases de surf y equipo",
-      "studio": "Estudio clásico",
+      "studio": "Fotografía profesional | Classic Studio",
       "experiences": "Experiencias locales"
     },
     "notIncluded": {
@@ -30,9 +65,18 @@
       }
     }
   },
+  "accommodation": {
+  "title": "Alojamiento",
+  "description": "Nos alojamos en Antik Riad, una encantadora casa tradicional situada a solo 100 metros del surf club. Es el punto de encuentro para los desayunos, planificar las sesiones, descansar después del surf y compartir la experiencia con el grupo.",
+  "image1Alt": "Alojamiento en Antik Riad en Asilah",
+  "image2Alt": "Habitación en Antik Riad",
+  "image3Alt": "Zona común de Antik Riad",
+  "image4Alt": "Terraza de Antik Riad"
+  },
   "surfSpots": {
     "title": "Surf Spots",
-    "description": "Surfea las mejores condiciones todos los días.Cada mañana, revisaremos las olas en la playa justo frente al surf club. Si las condiciones son buenas, ahí es donde surfearemos. Si otro spot funciona mejor, nos subiremos a la furgoneta y nos dirigiremos allí. Vigilamos el oleaje, el viento y las mareas todos los días, para que siempre estés surfeando las mejores condiciones disponibles, no solo quedándote en la misma playa.",
+    "description1": "Surfea las mejores condiciones todos los días.",
+    "description2": "Cada mañana, revisaremos las olas en la playa justo frente al surf club. Si las condiciones son buenas, ahí es donde surfearemos. Si otro spot funciona mejor, nos subiremos a la furgoneta y nos dirigiremos allí. Vigilamos el oleaje, el viento y las mareas todos los días, para que siempre estés surfeando las mejores condiciones disponibles, no solo quedándote en la misma playa.",
     "imageAlt": "Surf spots en Asilah Marruecos"
   },
   "equipment": {
@@ -43,12 +87,15 @@
   },
   "studio": {
     "title": "Classic Studio",
-    "description": "Captura la experiencia.Issam de Classic Studio forma parte de nuestro equipo y nos acompaña durante todo el viaje junto a nuestros entrenadores de surf. Capturará los mejores momentos dentro y fuera del agua, para que vuelvas a casa con fotos y vídeos profesionales de un viaje inolvidable.",
+    "description1": "Captura la experiencia.",
+    "description2": "Issam de Classic Studio forma parte de nuestro equipo y nos acompaña durante todo el viaje junto a nuestros entrenadores de surf. Capturará los mejores momentos dentro y fuera del agua, para que vuelvas a casa con fotos y vídeos profesionales de un viaje inolvidable.",
     "imageAlt": "Issam de Classic Studio"
   },
    "discover": {
     "title": "Descubre Asilah",
-    "description": "Un tranquilo pueblo atlántico con arte, sabor y mucho carácter.Asilah es un pequeño pueblo pesquero situado a solo 45 km de Tánger, donde la vida transcurre a un ritmo más tranquilo. Su medina blanca, sus coloridos murales y sus vistas al océano hacen que sea un lugar que querrás explorar incluso después de salir del agua.<br/><br/>Después de surfear, puedes perderte por sus calles estrechas, tomar un café en la plaza principal, disfrutar de pescado fresco junto al mar o simplemente contemplar la puesta de sol sobre el Atlántico. Es un lugar tranquilo, auténtico y lleno de personalidad, el tipo de sitio que convierte un surf trip en una experiencia completa.",
+    "description1": "Un tranquilo pueblo atlántico con arte, sabor y mucho carácter.",
+    "description2": "Asilah es un pequeño pueblo pesquero situado a solo 45 km de Tánger, donde la vida transcurre a un ritmo más tranquilo. Su medina blanca, sus coloridos murales y sus vistas al océano hacen que sea un lugar que querrás explorar incluso después de salir del agua.",
+    "description3": "Después de surfear, puedes perderte por sus calles estrechas, tomar un café en la plaza principal, disfrutar de pescado fresco junto al mar o simplemente contemplar la puesta de sol sobre el Atlántico. Es un lugar tranquilo, auténtico y lleno de personalidad, el tipo de sitio que convierte un surf trip en una experiencia completa.",
     "imageAlt": "Texturas y arquitectura de Asilah"
   },
   "faq": {
@@ -77,14 +124,14 @@
       },
       {
         "title": "¿Qué no está incluido?",
-        "content": "Los vuelos o transporte hasta Marruecos, el seguro médico o de viaje y las bebidas alcohólicas no están incluidos."
+        "content": "Los vuelos o transporte hasta Asilah, el seguro médico o de viaje y las bebidas alcohólicas no están incluidos."
       }
     ]
   },
   "cta": {
     "kicker": "Plazas limitadas",
-    "title": "¿Listo para tu próxima aventura de surf?",
-    "description": "Reserva tu plaza, únete al grupo de WhatsApp y empieza tu surf trip de Antik incluso antes de llegar a Asilah.",
+    "title": "¿Listo para tu próximo surftrip?",
+    "description": "Reserva tu plaza, únete al grupo de WhatsApp y empieza tu surftrip antes de llegar a Asilah.",
     "button": "Reserva tu plaza"
   }
 }

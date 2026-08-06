@@ -30,7 +30,11 @@ export default async function SurfSpots() {
 
 
             <p className="section-subtitle">
-              {t("description")}
+              {t("description1")}
+            </p>
+
+            <p className="section-subtitle">
+              {t("description2")}
             </p>
 
           </div>

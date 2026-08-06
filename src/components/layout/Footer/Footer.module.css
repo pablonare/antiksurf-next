@@ -51,11 +51,11 @@
     align-items: center;
 
     border-top: 1px solid var(--color-border);
-    
 }
 
 .bottom a {
     color: var(--color-white);
+    text-decoration: underline;
 }
 
 
