@@ -18,6 +18,10 @@ const languages = [
   {
     code: "fr",
     label: "FR"
+  },
+  {
+    code: "ar",
+    label: "AR"
   }
 ];
 

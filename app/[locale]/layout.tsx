@@ -81,6 +81,12 @@ const antikFont = localFont({
   style: "normal",
 });
 
+const arabicFont = localFont({
+  src: "../../src/assets/fonts/IBMPlexSansArabic-Regular.woff2",
+  variable: "--font-arabic",
+  display: "swap",
+});
+
 
 export default async function RootLayout({
   children,

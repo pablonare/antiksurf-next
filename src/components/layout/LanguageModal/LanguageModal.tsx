@@ -10,7 +10,7 @@ export default function LanguageModal() {
 
   const [isOpen, setIsOpen] = useState(true);
 
-  function changeLanguage(locale: "en" | "es" | "fr") {
+  function changeLanguage(locale: "en" | "es" | "fr" | "ar") {
     document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000`;
 
     setIsOpen(false);
@@ -53,6 +53,13 @@ export default function LanguageModal() {
             onClick={() => changeLanguage("fr")}
           >
             Français
+          </button>
+
+          <button
+            className={styles.button}
+            onClick={() => changeLanguage("ar")}
+          >
+            العربية
           </button>
 
         </div>
