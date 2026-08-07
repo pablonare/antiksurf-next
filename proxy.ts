@@ -27,7 +27,6 @@ export default function proxy(request: NextRequest) {
     );
   }
 
-
   return handleI18nRouting(request);
 }
 
