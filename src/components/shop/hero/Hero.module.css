@@ -1,5 +1,4 @@
 .hero {
-  padding-top: 9vh;
   position: relative;
   height: 600px;
 }
@@ -17,7 +16,13 @@
 
   inset: 0;
 
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.55);
 
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 350px;
+  }
 }

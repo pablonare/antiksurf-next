@@ -1,0 +1,39 @@
+.navigation {
+  width: 100%;
+  margin-top: 65px;
+  background: rgba(255, 255, 255, 0.65);
+  position: absolute;
+  border-top: 0.25px solid rgb(255, 255, 255);
+  border-bottom: 0.25px solid rgb(255, 253, 253);
+  z-index: 2;
+}
+
+.scroller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.link {
+  flex-shrink: 0;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+
+  .link {
+  font-size: 1rem;
+  }
+
+  .scroller {
+    gap: 1.5rem;
+  }
+
+  .scroller::-webkit-scrollbar {
+    display: none;
+  }
+}

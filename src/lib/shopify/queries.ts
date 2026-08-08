@@ -14,6 +14,36 @@ export const PRODUCTS_QUERY = `
     }
   }
 `;
+export const COLLECTION_BY_HANDLE_QUERY = `
+  query CollectionByHandle($handle: String!) {
+    collection(handle: $handle) {
+      id
+      title
+      products(first: 5) {
+        nodes {
+          id
+          title
+          handle
+          description
+          featuredImage {
+            url
+            altText
+          }
+          variants(first: 1) {
+            nodes {
+              id
+              price {
+                amount
+                currencyCode
+              }
+              availableForSale
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export const PRODUCT_BY_HANDLE_QUERY = `
   query ProductByHandle($handle: String!) {
