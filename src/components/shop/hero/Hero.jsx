@@ -14,14 +14,7 @@ function Hero() {
         priority
         className={styles.background}
       />
-
       <div className={styles.overlay} />
-
-      <div className={styles.content}>
-        <h1>Shop</h1>
-        <h2>Coming Soon</h2>
-      </div>
-
     </section>
   );
 }

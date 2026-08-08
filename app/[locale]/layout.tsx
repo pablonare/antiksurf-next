@@ -16,7 +16,7 @@ import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import LanguageModal from "@/components/layout/LanguageModal/LanguageModal";
 import { CartProvider } from "@/lib/shopify/cart-context";
-
+import CartDrawer from "@/components/cart/CartDrawer";
 
 export const metadata: Metadata = {
 
@@ -105,25 +105,25 @@ const cookieStore = await cookies();
 const hasLocale = !!cookieStore.get("NEXT_LOCALE");
 
 return (
-<html lang={locale}>
-<body>
-<NextIntlClientProvider messages={messages}>
-<CartProvider>
+  <html lang={locale}>
+    <body>
+      <NextIntlClientProvider messages={messages}>
+        <CartProvider>
 
-{!hasLocale && <LanguageModal key={locale} />}
+          {!hasLocale && <LanguageModal key={locale} />}
 
-<Header />
+          <Header />
 
-<main>
-{children}
-</main>
+          <main>
+            {children}
+          </main>
 
-<Footer />
-<WhatsAppButton />
-
-</CartProvider>
-</NextIntlClientProvider>
-</body>
-</html>
+          <Footer />
+          <WhatsAppButton />
+          <CartDrawer />
+        </CartProvider>
+      </NextIntlClientProvider>
+    </body>
+  </html>
   );
 }
