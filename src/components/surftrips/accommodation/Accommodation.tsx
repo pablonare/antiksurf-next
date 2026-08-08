@@ -55,8 +55,8 @@ export default async function Accommodation() {
                 className={styles.image}
                 src={image.src}
                 alt={image.alt}
-                width={800}
-                height={600}
+                width={1200}
+                height={1500}
                 sizes="(max-width: 768px) 90vw, 25vw"
               />
             </div>

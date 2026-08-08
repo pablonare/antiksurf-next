@@ -32,18 +32,21 @@ export default async function Content() {
           src={AtlantikAsilah}
           alt="Atlantik Asilah"
           sizes="(max-width: 768px) 100vw, 33vw"
+          priority
         />
 
         <Image
           src={AtlantikCanos}
           alt="Atlantik Caños"
           sizes="(max-width: 768px) 100vw, 33vw"
+          priority
         />
 
         <Image
           src={AtlantikHendaya}
           alt="Atlantik Hendaya"
           sizes="(max-width: 768px) 100vw, 33vw"
+          priority
         />
 
       </div>
