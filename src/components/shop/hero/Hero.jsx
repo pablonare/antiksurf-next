@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import styles from "./Hero.module.css";
-import heroImage from "../../../assets/images/index/rentals.webp";
+import heroImage from "../../../assets/images/shop/IMG_1266.jpg";
 
 
 function Hero() {
