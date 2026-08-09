@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 
 import { shopifyClient } from "@/lib/shopify/client";
-import { PRODUCTS_QUERY } from "@/lib/shopify/queries";
-import {COLLECTION_BY_HANDLE_QUERY,} from "@/lib/shopify/queries";
+import { PRODUCTS_QUERY, PRODUCTS_BY_TYPE_QUERY } from "@/lib/shopify/queries";
 
+import Hero from "@/components/shop/hero/Hero";
 import ShopNavigation from "@/components/shop/shopnavigation/ShopNavigation";
-import ProductGrid from "@/components/shop/components/CollectionGrid/CollectionGrid";
-
+import TypeGrid from "@/components/shop/components/TypeGrid";
 import Container from "@/components/ui/Container/Container";
 
 export const metadata: Metadata = {
@@ -21,10 +20,10 @@ export const metadata: Metadata = {
 export default async function Page() {
   const { data, errors } = await shopifyClient.request(PRODUCTS_QUERY);
 
-  const { data: collectionData, errors: collectionErrors } =
-    await shopifyClient.request(COLLECTION_BY_HANDLE_QUERY, {
+  const { data: productsByTypeData, errors: productsByTypeErrors } =
+    await shopifyClient.request(PRODUCTS_BY_TYPE_QUERY, {
       variables: {
-        handle: "best-sellers",
+        query: 'product_type:"snowboard"',
       },
     });
 
@@ -32,17 +31,19 @@ export default async function Page() {
     console.error("Shopify error:", errors);
   }
 
-  if (collectionErrors) {
-    console.error("Shopify collection error:", collectionErrors);
+  if (productsByTypeErrors) {
+    console.error("Shopify products by type error:", productsByTypeErrors);
   }
 
   return (
     <>
-     
-      <div style={{ height: "65px" }} />
+      <Hero />
       <ShopNavigation />
       <Container>
-        <ProductGrid handle="best-sellers" heading="T-shirts"/>
+        <TypeGrid
+          type="snowboard"
+          heading="T-shirts"
+        />
       </Container>
     </>
   );

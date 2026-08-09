@@ -116,3 +116,31 @@ export const CART_QUERY = `
     }
   }
 `;
+
+export const PRODUCTS_BY_TYPE_QUERY = `
+  query ProductsByType($query: String!) {
+    products(first: 15, query: $query) {
+      nodes {
+        id
+        title
+        handle
+        description
+        productType
+        featuredImage {
+          url
+          altText
+        }
+        variants(first: 1) {
+          nodes {
+            id
+            price {
+              amount
+              currencyCode
+            }
+            availableForSale
+          }
+        }
+      }
+    }
+  }
+`;

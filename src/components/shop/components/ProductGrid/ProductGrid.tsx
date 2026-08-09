@@ -1,13 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./ProductsScrollGrid.module.css";
+import styles from "./ProductGrid.module.css";
 
 type Product = {
   id: string;
   handle: string;
   title: string;
   featuredImage: { url: string; altText: string | null } | null;
-  priceRange: { minVariantPrice: { amount: string; currencyCode: string } };
+  variants: {
+    nodes: {
+      price: {
+        amount: string;
+        currencyCode: string;
+      };
+    }[];
+  };
 };
 
 type ProductsScrollGridProps = {
@@ -22,9 +29,9 @@ export default function ProductsScrollGrid({ heading, products }: ProductsScroll
     <section className={styles.section}>
       {heading && <h2 className={styles.heading}>{heading}</h2>}
 
-      <div className={styles.scroller}>
+      <div className={styles.grid}>
         {products.map((product) => {
-            const price = product.priceRange?.minVariantPrice;
+            const price = product.variants.nodes[0]?.price;
                 return (
                     <Link
                     key={product.id}
