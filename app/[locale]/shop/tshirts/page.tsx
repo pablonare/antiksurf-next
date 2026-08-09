@@ -4,9 +4,8 @@ import { shopifyClient } from "@/lib/shopify/client";
 import { PRODUCTS_QUERY } from "@/lib/shopify/queries";
 import {COLLECTION_BY_HANDLE_QUERY,} from "@/lib/shopify/queries";
 
-import Hero from "@/components/shop/hero/Hero";
 import ShopNavigation from "@/components/shop/shopnavigation/ShopNavigation";
-import CollectionScrollGrid from "@/components/shop/components/CollectionScrollGrid/CollectionScrollGrid";
+import ProductGrid from "@/components/shop/components/CollectionGrid/CollectionGrid";
 
 import Container from "@/components/ui/Container/Container";
 
@@ -39,11 +38,11 @@ export default async function Page() {
 
   return (
     <>
-      <Hero />
-      <ShopNavigation/>
+     
+      <div style={{ height: "65px" }} />
+      <ShopNavigation />
       <Container>
-        <CollectionScrollGrid handle="best-sellers" heading="T-shirts" />
-        <CollectionScrollGrid handle="preview-all-products" heading="Accesories" />
+        <ProductGrid handle="best-sellers" heading="T-shirts"/>
       </Container>
     </>
   );

@@ -5,7 +5,7 @@ export default function ShopNavigation() {
   return (
     <nav className={styles.navigation}>
       <div className={styles.scroller}>
-        <Link href="/shop" className={styles.link}>
+        <Link href="/shop/tshirts" className={styles.link}>
           t-shirts
         </Link>
 
