@@ -24,9 +24,6 @@ export default function Page() {
       <Hero />
       <CollectionScrollGrid handle="preview-all-products" heading="THE SHOP" />
       <CollectionScrollGrid handle="best-sellers" heading="SURF TRIPS" />
-      <UpcomingTrips />
-      <SurfLessons />
-      <Rentals />
     </>
   );
 }
