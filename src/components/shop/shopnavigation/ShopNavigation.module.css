@@ -24,11 +24,14 @@
   font-size: 1.2rem;
   white-space: nowrap;
 }
+.link:active {
+  color: var(--color-secondary);
+}
 
 @media (max-width: 640px) {
 
   .link {
-  font-size: 1rem;
+  font-size: 1.2rem;
   }
 
   .scroller {
