@@ -29,7 +29,7 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <UpcomingTrips />
+      <UpcomingTrips/>
       <Included />
       <Accommodation />
       <SurfSpots />

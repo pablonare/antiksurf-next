@@ -11,6 +11,7 @@ export default async function UpcomingTrips() {
   const t = await getTranslations("surftrips.upcomingTrips");
 
   return (
+    <div id="upcoming-trips">
     <Section>
       <Container>
 
@@ -34,5 +35,6 @@ export default async function UpcomingTrips() {
 
       </Container>
     </Section>
+    </div>
   );
 }
