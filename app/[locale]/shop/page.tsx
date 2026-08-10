@@ -7,6 +7,7 @@ import {COLLECTION_BY_HANDLE_QUERY,} from "@/lib/shopify/queries";
 import Hero from "@/components/shop/hero/Hero";
 import ShopNavigation from "@/components/shop/shopnavigation/ShopNavigation";
 import CollectionScrollGrid from "@/components/shop/components/CollectionScrollGrid";
+import TypeScrollGrid from "@/components/shop/components/TypeScrollGrid";
 
 import Container from "@/components/ui/Container/Container";
 
@@ -42,8 +43,7 @@ export default async function Page() {
       <Hero />
       <ShopNavigation/>
       <Container>
-        <CollectionScrollGrid handle="best-sellers" heading="LAST COLLECTION" />
-        <CollectionScrollGrid handle="preview-all-products" heading="ATLANTIK COLLECTION" />
+        <TypeScrollGrid type="tienda" heading="LAST COLLECTION" />
       </Container>
     </>
   );

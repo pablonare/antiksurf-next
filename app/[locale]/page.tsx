@@ -22,7 +22,7 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <TypeScrollGrid type="snowboard" heading="THE SHOP >" headingHref="/shop" />
+      <TypeScrollGrid type="tienda" heading="THE SHOP >" headingHref="/shop" />
       <TypeScrollGrid type="surftrip" heading="SURF TRIPS >"  headingHref="/surftrips"/>
     </>
   );

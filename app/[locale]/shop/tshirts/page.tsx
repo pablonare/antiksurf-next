@@ -41,7 +41,7 @@ export default async function Page() {
       <ShopNavigation />
       <Container>
         <TypeGrid
-          type="snowboard"
+          type="tienda"
           heading="T-shirts"
         />
       </Container>
