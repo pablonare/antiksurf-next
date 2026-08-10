@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 
-import SurfLessons from "@/components/home/SurfLessons/SurfLessons";
-import Rentals from "@/components/home/Rentals/Rentals";
+import Hero from "@/components/lessonsrentals/Hero/Hero";
+import SurfLessons from "@/components/lessonsrentals/SurfLessons/SurfLessons";
+import Rentals from "@/components/lessonsrentals/Rentals/Rentals";
 
 import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("events.metadata");
+  const t = await getTranslations("home.metadata");
 
   return {
     title: t("title"),
@@ -20,6 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Page() {
   return (
     <>
+      <Hero/>
       <SurfLessons />
       <Rentals />
     </>

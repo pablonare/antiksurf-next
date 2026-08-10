@@ -1,8 +1,6 @@
 import Hero from "@/components/home/Hero/Hero";
 import Intro from "@/components/home/Intro/Intro";
 import UpcomingTrips from "@/components/home/UpcomingTrips/UpcomingTrips";
-import SurfLessons from "@/components/home/SurfLessons/SurfLessons";
-import Rentals from "@/components/home/Rentals/Rentals";
 import CollectionScrollGrid from "@/components/shop/components/CollectionScrollGrid";
 import TypeScrollGrid from "@/components/shop/components/TypeScrollGrid";
 
