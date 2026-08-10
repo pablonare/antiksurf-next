@@ -10,6 +10,7 @@ import Studio from "@/components/surftrips/studio/Studio";
 import Discover from "@/components/surftrips/discover/Discover";
 import Faq from "@/components/surftrips/faq/Faq";
 import Cta from "@/components/surftrips/cta/Cta";
+import TypeScrollGrid from "@/components/shop/components/TypeScrollGrid";
 
 import { getTranslations } from "next-intl/server";
 
@@ -29,7 +30,8 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <UpcomingTrips />
+      {/* <UpcomingTrips /> */}
+      <TypeScrollGrid type="surftrip" heading="Upcoming Trips"  headingHref=""/>
       <Included />
       <Accommodation />
       <SurfSpots />

@@ -7,7 +7,10 @@ type Product = {
   id: string;
   handle: string;
   title: string;
-  featuredImage: { url: string; altText: string | null } | null;
+  featuredImage: {
+    url: string;
+    altText: string | null;
+  } | null;
   variants: {
     nodes: {
       price: {
@@ -20,50 +23,71 @@ type Product = {
 
 type ProductsScrollGridProps = {
   heading?: string;
+  headingHref?: string;
   products: Product[];
 };
 
-export default function ProductsScrollGrid({ heading, products }: ProductsScrollGridProps) {
+export default function ProductsScrollGrid({
+  heading,
+  headingHref,
+  products,
+}: ProductsScrollGridProps) {
   if (!products.length) return null;
 
   return (
     <Container>
-    <section className={styles.section}>
-      {heading && <h2 className={styles.heading}>{heading}</h2>}
+      <div className={styles.section}>
 
-      <div className={styles.scroller}>
-        {products.map((product) => {
+        {heading && (
+          <h2 className={styles.heading}>
+            {headingHref ? (
+              <Link href={headingHref} className={styles.headingLink}>
+                {heading}
+              </Link>
+            ) : (
+              heading
+            )}
+          </h2>
+        )}
+
+        <div className={styles.scroller}>
+          {products.map((product) => {
             const price = product.variants.nodes[0]?.price;
-                return (
-                    <Link
-                    key={product.id}
-                    href={`/shop/${product.handle}`}
-                    className={styles.card}
-                    >
-                    {product.featuredImage && (
-                        <div className={styles.imageWrapper}>
-                        <Image
-                            src={product.featuredImage.url}
-                            alt={product.featuredImage.altText || product.title}
-                            fill
-                            className={styles.image}
-                        />
-                        </div>
-                    )}
-                    <h3 className={styles.title}>{product.title}</h3>
-                    {price && (
-                        <p className={styles.price}>
-                        {new Intl.NumberFormat("es-ES", {
-                            style: "currency",
-                            currency: price.currencyCode,
-                        }).format(Number(price.amount))}
-                        </p>
-                    )}
-                    </Link>
-                );
-            })}
+
+            return (
+              <Link
+                key={product.id}
+                href={`/shop/${product.handle}`}
+                className={styles.card}
+              >
+                {product.featuredImage && (
+                  <div className={styles.imageWrapper}>
+                    <Image
+                      src={product.featuredImage.url}
+                      alt={
+                        product.featuredImage.altText || product.title
+                      }
+                      fill
+                      className={styles.image}
+                    />
+                  </div>
+                )}
+
+                <h3 className={styles.title}>{product.title}</h3>
+
+                {price && (
+                  <p className={styles.price}>
+                    {new Intl.NumberFormat("es-ES", {
+                      style: "currency",
+                      currency: price.currencyCode,
+                    }).format(Number(price.amount))}
+                  </p>
+                )}
+              </Link>
+            );
+          })}
+        </div>
       </div>
-    </section>
     </Container>
   );
 }

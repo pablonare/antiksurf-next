@@ -42,7 +42,7 @@ export default async function Hero() {
           </p>
 
 
-          <div className={styles.actions}>
+          {/* <div className={styles.actions}>
 
             <Button href="#upcoming-trips">
               {t("viewTrips")}
@@ -56,7 +56,7 @@ export default async function Hero() {
               {t("bookNow")}
             </Button>
 
-          </div>
+          </div> */}
 
         </div>
       </Container>
