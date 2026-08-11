@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 import Hero from "@/components/surftrips/hero/Hero";
-import UpcomingTrips from "@/components/surftrips/upcomingtrips/UpcomingTrips";
 import Included from "@/components/surftrips/included/Included";
 import Accommodation from "@/components/surftrips/accommodation/Accommodation";
 import SurfSpots from "@/components/surftrips/surfspots/SurfSpots";

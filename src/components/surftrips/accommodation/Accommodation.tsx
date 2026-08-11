@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import Container from "../../../components/ui/Container/Container";
 import Section from "../../../components/layout/Section/Section";
+import Toggle from "../../../components/ui/toggle/Toggle";
 
 import accommodation1 from "../../../assets/images/surftrips/accommodation/accommodation_1.webp";
 import accommodation2 from "../../../assets/images/surftrips/accommodation/accommodation_2.webp";
@@ -34,35 +35,28 @@ export default async function Accommodation() {
   ];
 
   return (
-    <Section>
+    <Section spacing="sm">
       <Container>
+        <Toggle title={t("title")}>
+          <p className="section-subtitle">
+            {t("description")}
+          </p>
 
-        <h2 className="section-title">
-          {t("title")}
-        </h2>
-
-        <p className="section-subtitle">
-          {t("description")}
-        </p>
-
-        <div className={styles.gallery}>
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className={styles.card}
-            >
-              <Image
-                className={styles.image}
-                src={image.src}
-                alt={image.alt}
-                width={800}
-                height={600}
-                sizes="(max-width: 768px) 90vw, 25vw"
-              />
-            </div>
-          ))}
-        </div>
-
+          <div className={styles.gallery}>
+            {images.map((image, index) => (
+              <div key={index} className={styles.card}>
+                <Image
+                  className={styles.image}
+                  src={image.src}
+                  alt={image.alt}
+                  width={800}
+                  height={600}
+                  sizes="(max-width: 768px) 90vw, 25vw"
+                />
+              </div>
+            ))}
+          </div>
+        </Toggle>
       </Container>
     </Section>
   );

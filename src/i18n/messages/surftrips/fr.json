@@ -10,45 +10,6 @@
     "viewTrips": "Voir les trips",
     "bookNow": "Réserver"
   },
-  "upcomingTrips": {
-    "kicker": "Prochains Surf Trips",
-    "title": "Choisissez vos dates et réservez votre place à l'avance",
-
-    "full": "",
-    "available": "Disponible",
-    "bookNow": "Réserver",
-    "moreInfo": "Visiter le site web",
-
-    "trips": {
-      "trip1": {
-        "alt": "Couverture du surf trip du 4 au 7 septembre 2026",
-        "date": "4–7 septembre 2026",
-        "title": "Trip Antik",
-        "price": "475€ avant le 1er août • 545€ tarif normal",
-        "meta": "4 jours · Complet"
-      },
-      "trip2": {
-        "alt": "Couverture du surf trip du 29 septembre au 4 octobre 2026",
-        "date": "29 septembre – 4 octobre 2026",
-        "title": "Trip Antik × It's Only Water",
-        "meta": "6 jours · Places disponibles"
-      },
-      "trip3": {
-        "alt": "Couverture du surf trip du 9 au 12 octobre 2026",
-        "date": "9–12 octobre 2026",
-        "title": "Trip Antik",
-        "price": "475€ avant le 1er août • 545€ tarif normal",
-        "meta": "4 jours · Places disponibles"
-      },
-      "trip4": {
-        "alt": "Couverture du surf trip du 4 au 8 décembre 2026",
-        "date": "4–8 décembre 2026",
-        "title": "Trip Antik",
-        "price": "580€ avant le 1er octobre • 650€ tarif normal",
-        "meta": "5 jours · Places disponibles"
-      }
-    }
-  },
   "included": {
     "title": "Ce qui est inclus",
     "items": {

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
-import Hero from "@/components/lessonsrentals/Hero/Hero";
-import SurfLessons from "@/components/lessonsrentals/SurfLessons/SurfLessons";
-import Rentals from "@/components/lessonsrentals/Rentals/Rentals";
+import Hero from "@/components/school/Hero/Hero";
+import SurfLessons from "@/components/school/SurfLessons/SurfLessons";
+import Rentals from "@/components/school/Rentals/Rentals";
+import Quiver from "@/components/school/Quiver/Quiver"
 
 import { getTranslations } from "next-intl/server";
 
@@ -24,6 +25,7 @@ export default function Page() {
       <Hero/>
       <SurfLessons />
       <Rentals />
+      <Quiver/>
     </>
   );
 }

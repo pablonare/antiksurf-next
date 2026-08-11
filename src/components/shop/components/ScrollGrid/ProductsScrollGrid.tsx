@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./ProductsScrollGrid.module.css";
 import Container from "@/components/ui/Container/Container";
+import Section from "@/components/layout/Section/Section";
 
 type Product = {
   id: string;
@@ -38,7 +39,7 @@ export default function ProductsScrollGrid({
 
   return (
     <Container>
-      <div className={styles.section}>
+      <Section>
 
         {heading && (
           <h2 className={styles.heading}>
@@ -90,7 +91,7 @@ export default function ProductsScrollGrid({
             );
           })}
         </div>
-      </div>
+      </Section>
     </Container>
   );
 }

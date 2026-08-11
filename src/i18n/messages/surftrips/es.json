@@ -10,64 +10,25 @@
     "viewTrips": "Ver viajes",
     "bookNow": "Reservar"
   },
-  "upcomingTrips": {
-    "kicker": "Próximos Surf Trips",
-    "title": "Elige tus fechas y asegura tu plaza con antelación",
-
-    "full": "",
-    "available": "Disponible",
-    "bookNow": "Reservar",
-    "moreInfo": "Visitar página web",
-
-    "trips": {
-      "trip1": {
-        "alt": "Portada del surf trip del 4 al 7 de septiembre de 2026",
-        "date": "4–7 de septiembre de 2026",
-        "title": "Trip Antik",
-        "price": "475€ antes del 1 de agosto • 545€ precio normal",
-        "meta": "4 días · Completo"
-      },
-      "trip2": {
-        "alt": "Portada del surf trip del 29 de septiembre al 4 de octubre de 2026",
-        "date": "29 de septiembre – 4 de octubre de 2026",
-        "title": "Trip Antik × It's Only Water",
-        "meta": "6 días · Plazas disponibles"
-      },
-      "trip3": {
-        "alt": "Portada del surf trip del 9 al 12 de octubre de 2026",
-        "date": "9–12 de octubre de 2026",
-        "title": "Trip Antik",
-        "price": "475€ antes del 1 de agosto • 545€ precio normal",
-        "meta": "4 días · Plazas disponibles"
-      },
-      "trip4": {
-        "alt": "Portada del surf trip del 4 al 8 de diciembre de 2026",
-        "date": "4–8 de diciembre de 2026",
-        "title": "Trip Antik",
-        "price": "580€ antes del 1 de octubre • 650€ precio normal",
-        "meta": "5 días · Plazas disponibles"
-      }
-    }
-  },
   "included": {
-    "title": "¿Qué incluye el viaje?",
+  "title": "Qué está incluido?",
+  "items": {
+    "accommodation": "Alojamiento",
+    "meals": "Comidas (desayuno, comida y cena)",
+    "transport": "Transporte a las playas",
+    "surf": "Clases de surf y equipo",
+    "studio": "Estudio clásico",
+    "experiences": "Experiencias locales"
+  },
+  "notIncluded": {
+    "title": "No incluido",
+    "subtitle": "A organizar por separado",
     "items": {
-      "accommodation": "Alojamiento",
-      "meals": "Comidas (desayuno, comida y cena)",
-      "transport": "Transporte a la playa",
-      "surf": "Clases de surf y equipo",
-      "studio": "Fotografía profesional | Classic Studio",
-      "experiences": "Experiencias locales"
-    },
-    "notIncluded": {
-      "title": "No incluido",
-      "subtitle": "Organízalo por separado",
-      "items": {
-        "flights": "Vuelos o ferry a Marruecos",
-        "alcohol": "Bebidas alcohólicas",
-        "insurance": "Seguro médico / de viaje"
-      }
+      "flights": "Vuelos o ferry a Marruecos",
+      "alcohol": "Bebidas alcohólicas",
+      "insurance": "Seguro médico / de viaje"
     }
+  }
   },
   "accommodation": {
   "title": "Alojamiento",

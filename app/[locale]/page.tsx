@@ -1,7 +1,4 @@
 import Hero from "@/components/home/Hero/Hero";
-import Intro from "@/components/home/Intro/Intro";
-import UpcomingTrips from "@/components/home/UpcomingTrips/UpcomingTrips";
-import CollectionScrollGrid from "@/components/shop/components/CollectionScrollGrid";
 import TypeScrollGrid from "@/components/shop/components/TypeScrollGrid";
 
 import { getTranslations } from "next-intl/server";
@@ -20,8 +17,8 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <TypeScrollGrid type="tienda" heading="THE SHOP >" headingHref="/shop" />
       <TypeScrollGrid type="surftrip" heading="SURF TRIPS >"  headingHref="/surftrips"/>
+      <TypeScrollGrid type="tienda" heading="THE SHOP >" headingHref="/shop" />
     </>
   );
 }

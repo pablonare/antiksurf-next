@@ -1,0 +1,36 @@
+.media {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.imageWrapper {
+  position: relative;
+  height: 650px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .media {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .media::-webkit-scrollbar {
+    display: none;
+  }
+
+  .imageWrapper {
+    flex: 0 0 85%;
+    height: 480px;
+    scroll-snap-align: start;
+  }
+}

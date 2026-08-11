@@ -56,12 +56,12 @@ function MobileMenu() {
             {t("home")}
           </Link>
 
-          <Link href="/shop" onClick={() => setIsOpen(false)}>
-            {t("shop")}
-          </Link>
-
           <Link href="/surftrips" onClick={() => setIsOpen(false)}>
             {t("trips")}
+          </Link>
+
+          <Link href="/shop" onClick={() => setIsOpen(false)}>
+            {t("shop")}
           </Link>
 
           <Link href="/school" onClick={() => setIsOpen(false)}>

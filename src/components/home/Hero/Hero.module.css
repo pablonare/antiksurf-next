@@ -1,10 +1,16 @@
 .hero {
   position: relative;
-  height: 60vh;
+  height: 80vh;
   overflow: hidden;
 }
 
 .image {
   object-fit: cover;
   object-position: center;
+}
+
+@media (max-width: 768px) {
+ .hero {
+  height: 60vh;
+ }
 }

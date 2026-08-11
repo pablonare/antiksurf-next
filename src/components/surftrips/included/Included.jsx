@@ -24,7 +24,7 @@ export default async function Included() {
   ];
 
   return (
-    <Section>
+    <Section spacing="xlg">
       <Container>
 
         <header className="section-title">

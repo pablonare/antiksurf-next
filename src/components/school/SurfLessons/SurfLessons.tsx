@@ -1,27 +1,33 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
-import Container from "../../../components/ui/Container/Container";
-import Section from "../../../components/layout/Section/Section";
+import Container from "../../ui/Container/Container";
+import Section from "@/components/layout/Section/Section";
+import SplitSection from "../../layout/SplitSection/SplitSection";
+import LessonsImage from "../../../assets/images/index/lessons.webp";
+import Button from "../../ui/Button/Button";
 
-import SplitSection from "../../../components/layout/SplitSection/SplitSection";
-import RentalsImage from "../../../assets/images/index/rentals.webp";
-import RentalPricesImage from "../../../assets/images/index/rentals-prices.webp";
-import Button from "../../../components/ui/Button/Button";
+import lessons from "./lessons";
+import Accordion from "../../ui/Accordion/Accordion";
+import styles from "./SurfLessons.module.css";
 
-import styles from "./Rentals.module.css";
+export default async function SurfLessons() {
+  const t = await getTranslations("school.surfLessons");
 
-export default async function Rentals() {
-  const t = await getTranslations("home.rentals");
+  const translatedLessons = lessons.map((lesson) => ({
+    title: t(lesson.title),
+    content: lesson.content.map((item) => t(item)),
+  }));
 
   return (
-    <Section>
+    <Section spacing="lg">
       <Container>
-        <SplitSection reverse={false}>
+
+        <SplitSection reverse={true} mobileReverse={true}>
 
           <div className={styles.media}>
             <Image
-              src={RentalsImage}
+              src={LessonsImage}
               alt={t("imageAlt")}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -39,14 +45,7 @@ export default async function Rentals() {
               {t("description")}
             </p>
 
-            <Image
-              className={styles.contentImage}
-              src={RentalPricesImage}
-              alt={t("pricesImageAlt")}
-              width={500}
-              height={300}
-              sizes="(max-width: 768px) 100vw, 500px"
-            />
+            <Accordion items={translatedLessons} />
 
             <div className={styles.actions}>
               <Button
@@ -61,6 +60,7 @@ export default async function Rentals() {
           </div>
 
         </SplitSection>
+
       </Container>
     </Section>
   );

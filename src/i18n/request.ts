@@ -9,6 +9,7 @@ export default getRequestConfig(async ({requestLocale}) => {
   }
   const navigationMessages = (await import(`./messages/navigation/${locale}.json`)).default;
   const homeMessages = (await import(`./messages/home/${locale}.json`)).default;
+  const schoolMessages = (await import (`./messages/school/${locale}.json`)).default;
   const surftripsMessages = (await import(`./messages/surftrips/${locale}.json`)).default;
   const eventsMessages = (await import(`./messages/events/${locale}.json`)).default;
 
@@ -17,6 +18,7 @@ export default getRequestConfig(async ({requestLocale}) => {
     messages: {
       navigation: navigationMessages,
       home: homeMessages,
+      school: schoolMessages,
       surftrips: surftripsMessages,
       events: eventsMessages
     }
