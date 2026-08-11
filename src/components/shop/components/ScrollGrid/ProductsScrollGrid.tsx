@@ -8,6 +8,7 @@ type Product = {
   id: string;
   handle: string;
   title: string;
+  productType: string;
   featuredImage: {
     url: string;
     altText: string | null;
@@ -40,7 +41,6 @@ export default function ProductsScrollGrid({
   return (
     <Container>
       <Section>
-
         {heading && (
           <h2 className={styles.heading}>
             {headingHref ? (
@@ -57,10 +57,15 @@ export default function ProductsScrollGrid({
           {products.map((product) => {
             const price = product.variants.nodes[0]?.price;
 
+            const href =
+              product.productType === "surftrip"
+                ? `/surftrips/${product.handle}`
+                : `/shop/${product.handle}`;
+
             return (
               <Link
                 key={product.id}
-                href={`/shop/${product.handle}`}
+                href={href}
                 className={styles.card}
               >
                 {product.featuredImage && (
@@ -71,7 +76,7 @@ export default function ProductsScrollGrid({
                         product.featuredImage.altText || product.title
                       }
                       fill
-                      sizes="(max-width: 768px) 50vw, 25vw"
+                      sizes="(max-width: 768px) 85vw, 25vw"
                       className={styles.image}
                     />
                   </div>

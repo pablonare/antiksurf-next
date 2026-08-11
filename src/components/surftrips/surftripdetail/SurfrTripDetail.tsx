@@ -1,0 +1,154 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+import { useCart } from "@/lib/shopify/cart-context";
+import styles from "./SurftripDetail.module.css";
+import Button from "@/components/ui/Button/Button";
+
+
+type Variant = {
+  id: string;
+  title: string;
+  availableForSale: boolean;
+  selectedOptions: { name: string; value: string }[];
+  price: { amount: string; currencyCode: string };
+};
+
+type Product = {
+  id: string;
+  title: string;
+  description: string;
+  images: { nodes: { url: string; altText: string | null }[] };
+  variants: { nodes: Variant[] };
+};
+
+export default function ProductDetail({ product }: { product: Product }) {
+  const { addToCart, isLoading } = useCart();
+  const [selectedVariant, setSelectedVariant] = useState<Variant>(
+    product.variants.nodes[0]
+  );
+  const [quantity, setQuantity] = useState(1);
+  const [added, setAdded] = useState(false);
+
+  const images = product.images.nodes;
+
+  const deposit = Number(selectedVariant.price.amount);
+  const total = deposit * 2;
+
+  async function handleAddToCart() {
+    await addToCart(selectedVariant.id, quantity);
+    setAdded(true);
+    setTimeout(() => setAdded(false), 2000);
+  }
+
+  return (
+    <div className={styles.wrapper}>
+      <div className={styles.gallery}>
+        {images.map((img, i) => (
+          <div key={i} className={styles.imageWrapper}>
+            <Image
+              src={img.url}
+              alt={img.altText || product.title}
+              fill
+              className={styles.image}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div className={styles.info}>
+        <h1 className={styles.title}>{product.title}</h1>
+
+
+        <div className={styles.price}>
+        <p>
+            {new Intl.NumberFormat("es-ES", {
+            style: "currency",
+            currency: selectedVariant.price.currencyCode,
+            }).format(Number(selectedVariant.price.amount) * 2)}
+        </p>
+
+        <small>
+            Pay now 50%:{" "}
+            {new Intl.NumberFormat("es-ES", {
+            style: "currency",
+            currency: selectedVariant.price.currencyCode,
+            }).format(Number(selectedVariant.price.amount))}
+        </small>
+
+        <small>
+            Pay on arrival:{" "}
+            {new Intl.NumberFormat("es-ES", {
+            style: "currency",
+            currency: selectedVariant.price.currencyCode,
+            }).format(Number(selectedVariant.price.amount))}
+        </small>
+        </div>
+
+
+        <p className={styles.description}>{product.description}</p>
+
+        <div className={styles.included}>
+            <h3>What's Included</h3>
+
+            <ul>
+                <li>Accommodation</li>
+                <li>Meals (breakfast, lunch and dinner)</li>
+                <li>Beach Transport</li>
+                <li>Surf Lessons & Equipment</li>
+                <li>Classic Studio</li>
+                <li>Local Experiences</li>
+            </ul>
+
+            <div className={styles.notIncluded}>
+                <p>NOT INCLUDED</p>
+
+                <h4>Plan these separately</h4>
+
+                <ul>
+                <li>Flights or ferry to Morocco</li>
+                <li>Alcoholic beverages</li>
+                <li>Medical / travel insurance</li>
+                </ul>
+            </div>
+        </div>
+
+        <div className={styles.quantity}>
+          <label htmlFor="quantity">People</label>
+          <input
+            id="quantity"
+            type="number"
+            min={1}
+            value={quantity}
+            onChange={(e) => setQuantity(Math.max(1, Number(e.target.value)))}
+          />
+        </div>
+
+        <Button
+          as="a"
+          onClick={handleAddToCart}
+          disabled={!selectedVariant.availableForSale || isLoading}
+        >
+          {!selectedVariant.availableForSale
+            ? "Agotado"
+            : isLoading
+            ? "Añadiendo..."
+            : added
+            ? "Añadido ✓"
+            : "Añadir al carrito"}
+        </Button>
+
+        <Button
+            as="a"
+            href="/surftrips"
+            variant="secondary"
+            >
+            {("View all Trips")}
+        </Button>
+
+
+      </div>
+    </div>
+  );
+}
