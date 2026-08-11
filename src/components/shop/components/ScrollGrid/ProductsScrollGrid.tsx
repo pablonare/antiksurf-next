@@ -10,6 +10,8 @@ type Product = {
   featuredImage: {
     url: string;
     altText: string | null;
+    width: number;
+    height: number;
   } | null;
   variants: {
     nodes: {
@@ -68,6 +70,7 @@ export default function ProductsScrollGrid({
                         product.featuredImage.altText || product.title
                       }
                       fill
+                      sizes="(max-width: 768px) 50vw, 25vw"
                       className={styles.image}
                     />
                   </div>
