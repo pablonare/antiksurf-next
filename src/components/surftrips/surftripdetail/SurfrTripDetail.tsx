@@ -35,7 +35,7 @@ export default function ProductDetail({ product }: { product: Product }) {
   const [selectedVariant, setSelectedVariant] = useState<Variant>(
     product.variants.nodes[0]
   );
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState<number | "">(1);
   const [added, setAdded] = useState(false);
 
   const images = product.images.nodes;
@@ -52,9 +52,22 @@ export default function ProductDetail({ product }: { product: Product }) {
 
 
   async function handleAddToCart() {
+    if (
+    !selectedVariant.availableForSale ||
+    isLoading ||
+    quantity === "" ||
+    quantity < 1
+    ) {
+      return;
+    }
+
     await addToCart(selectedVariant.id, quantity);
+
     setAdded(true);
-    setTimeout(() => setAdded(false), 2000);
+
+    setTimeout(() => {
+      setAdded(false);
+    }, 2000);
   }
 
   return (
@@ -136,7 +149,15 @@ export default function ProductDetail({ product }: { product: Product }) {
             type="number"
             min={1}
             value={quantity}
-            onChange={(e) => setQuantity(Math.max(1, Number(e.target.value)))}
+            onChange={(e) => {
+            const value = e.target.value;
+
+            if (value === "") {
+              setQuantity("");
+            } else {
+              setQuantity(Math.max(1, Number(value)));
+            }
+          }}
           />
         </div>
 
