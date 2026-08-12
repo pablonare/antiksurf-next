@@ -68,7 +68,7 @@ export const metadata: Metadata = {
 
     twitter: {
       card: "summary_large_image",
-      title: "Antik Surf Club | Surf Club in Asilah, Morocco",
+      title: "Antik Surf Club | Asilah, Morocco",
       description:
       "Surf lessons, surf trips and unforgettable experiences in Asilah, Morocco.",
       images: ["/og-image.jpg"],
