@@ -18,6 +18,8 @@ import LanguageModal from "@/components/layout/LanguageModal/LanguageModal";
 import { CartProvider } from "@/lib/shopify/cart-context";
 import CartDrawer from "@/components/cart/CartDrawer";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 export const metadata: Metadata = {
 
   metadataBase: new URL("https://antiksurf.com"),
@@ -107,6 +109,7 @@ const hasLocale = !!cookieStore.get("NEXT_LOCALE");
 return (
   <html lang={locale}>
     <body>
+      <SpeedInsights />
       <NextIntlClientProvider messages={messages}>
         <CartProvider>
 
