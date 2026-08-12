@@ -112,6 +112,13 @@
   cursor: not-allowed;
 }
 
+.soldOut{
+  text-align: center;
+  font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .08em;
+}
+
 @media (max-width: 768px) {
   .wrapper {
     grid-template-columns: 1fr;

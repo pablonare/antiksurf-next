@@ -12,6 +12,7 @@ import Cta from "@/components/surftrips/cta/Cta";
 import TypeScrollGrid from "@/components/shop/components/TypeScrollGrid";
 
 import { getTranslations } from "next-intl/server";
+import SurfTripsScrollGrid from "@/components/surftrips/tripscrollgrid/TripsScrollGrid";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("surftrips.metadata");
@@ -29,8 +30,7 @@ export default function Page() {
   return (
     <>
       <Hero />
-      {/* <UpcomingTrips /> */}
-      <TypeScrollGrid type="surftrip" heading="Upcoming Trips"  headingHref=""/>
+      <SurfTripsScrollGrid heading="Upcoming Trips"  headingHref=""/>
       <Included />
       <Accommodation />
       <SurfSpots />

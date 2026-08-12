@@ -73,6 +73,17 @@ export const PRODUCT_BY_HANDLE_QUERY = `
           }
         }
       }
+      metafields(
+      identifiers: [
+            { namespace: "custom", key: "precio_total" }
+            { namespace: "custom", key: "trip_date" }
+      ]
+      ) {
+          namespace
+          key
+          value
+          type
+      }
     }
   }
 `;
@@ -139,6 +150,18 @@ export const PRODUCTS_BY_TYPE_QUERY = `
             }
             availableForSale
           }
+        }
+        metafields(
+        identifiers: [
+            { namespace: "custom", key: "precio_total" }
+            { namespace: "custom", key: "trip_date" }
+            { namespace: "custom", key: "trip_start_date" }
+        ]
+        ) {
+          namespace
+          key
+          value
+          type
         }
       }
     }

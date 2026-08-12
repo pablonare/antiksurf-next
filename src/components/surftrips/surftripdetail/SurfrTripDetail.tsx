@@ -21,6 +21,13 @@ type Product = {
   description: string;
   images: { nodes: { url: string; altText: string | null }[] };
   variants: { nodes: Variant[] };
+
+  metafields?: {
+    namespace: string;
+    key: string;
+    value: string;
+    type: string;
+  }[];
 };
 
 export default function ProductDetail({ product }: { product: Product }) {
@@ -33,8 +40,16 @@ export default function ProductDetail({ product }: { product: Product }) {
 
   const images = product.images.nodes;
 
-  const deposit = Number(selectedVariant.price.amount);
-  const total = deposit * 2;
+  const metafields = product.metafields ?? [];
+
+  const priceTotal =
+  metafields.find((field) => field?.key === "precio_total")?.value ?? null;
+
+  const Date =
+  metafields.find((field) => field?.key === "trip_date")?.value ?? null;
+
+  const available = product.variants.nodes[0]?.availableForSale;
+
 
   async function handleAddToCart() {
     await addToCart(selectedVariant.id, quantity);
@@ -59,7 +74,7 @@ export default function ProductDetail({ product }: { product: Product }) {
 
       <div className={styles.info}>
         <h1 className={styles.title}>{product.title}</h1>
-
+        <h1 className={styles.title}>{Date}</h1>
 
         <div className={styles.price}>
         <p>
@@ -125,19 +140,23 @@ export default function ProductDetail({ product }: { product: Product }) {
           />
         </div>
 
-        <Button
-          as="a"
-          onClick={handleAddToCart}
-          disabled={!selectedVariant.availableForSale || isLoading}
-        >
-          {!selectedVariant.availableForSale
-            ? "Agotado"
-            : isLoading
-            ? "Añadiendo..."
-            : added
-            ? "Añadido ✓"
-            : "Añadir al carrito"}
-        </Button>
+        {selectedVariant.availableForSale ? (
+          <Button
+            as="a"
+            onClick={handleAddToCart}
+            disabled={isLoading}
+          >
+            {isLoading
+              ? "Añadiendo..."
+              : added
+              ? "Añadido ✓"
+              : "Añadir al carrito"}
+          </Button>
+        ) : (
+          <p className={styles.soldOut}>
+            Agotado
+          </p>
+        )}
 
         <Button
             as="a"
