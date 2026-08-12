@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import Image from "next/image";
 import { useCart } from "@/lib/shopify/cart-context";
@@ -31,6 +32,9 @@ type Product = {
 };
 
 export default function ProductDetail({ product }: { product: Product }) {
+
+  const t = useTranslations("surftrips.details");
+
   const { addToCart, isLoading } = useCart();
   const [selectedVariant, setSelectedVariant] = useState<Variant>(
     product.variants.nodes[0]
@@ -98,7 +102,7 @@ export default function ProductDetail({ product }: { product: Product }) {
         </p>
 
         <small>
-            Pay now 50%:{" "}
+            {t("payNow")}:{" "}
             {new Intl.NumberFormat("es-ES", {
             style: "currency",
             currency: selectedVariant.price.currencyCode,
@@ -106,7 +110,7 @@ export default function ProductDetail({ product }: { product: Product }) {
         </small>
 
         <small>
-            Pay on arrival:{" "}
+            {t("payOnArrival")}:{" "}
             {new Intl.NumberFormat("es-ES", {
             style: "currency",
             currency: selectedVariant.price.currencyCode,
@@ -115,35 +119,42 @@ export default function ProductDetail({ product }: { product: Product }) {
         </div>
 
 
-        <p className={styles.description}>{product.description}</p>
+        <p className={styles.description}>
+          {t("description")}
+        </p>
 
         <div className={styles.included}>
-            <h3>What's Included</h3>
+            <h3>{t("whatsIncluded")}</h3>
 
             <ul>
-                <li>Accommodation</li>
-                <li>Meals (breakfast, lunch and dinner)</li>
-                <li>Beach Transport</li>
-                <li>Surf Lessons & Equipment</li>
-                <li>Classic Studio</li>
-                <li>Local Experiences</li>
+              <li>{t("included.accommodation")}</li>
+              <li>{t("included.meals")}</li>
+              <li>{t("included.transport")}</li>
+              <li>{t("included.surf")}</li>
+              <li>{t("included.studio")}</li>
+              <li>{t("included.experiences")}</li>
             </ul>
 
-            <div className={styles.notIncluded}>
-                <p>NOT INCLUDED</p>
+            <p>{t("notIncluded")}</p>
 
-                <h4>Plan these separately</h4>
+            <h4>{t("planSeparately")}</h4>
 
-                <ul>
-                <li>Flights or ferry to Morocco</li>
-                <li>Alcoholic beverages</li>
-                <li>Medical / travel insurance</li>
-                </ul>
-            </div>
+            <ul>
+              <li>{t("notIncludedItems.flights")}</li>
+              <li>{t("notIncludedItems.alcohol")}</li>
+              <li>{t("notIncludedItems.insurance")}</li>
+            </ul>
         </div>
 
+        <p className={styles.description}>
+          {t("description2")}
+        </p>
+
         <div className={styles.quantity}>
-          <label htmlFor="quantity">People</label>
+          <label htmlFor="quantity">
+            {t("people")}
+          </label>
+
           <input
             id="quantity"
             type="number"
@@ -168,24 +179,25 @@ export default function ProductDetail({ product }: { product: Product }) {
             disabled={isLoading}
           >
             {isLoading
-              ? "Añadiendo..."
+              ? t("adding")
               : added
-              ? "Añadido ✓"
-              : "Añadir al carrito"}
+              ? t("added")
+              : t("addToCart")}
           </Button>
         ) : (
           <p className={styles.soldOut}>
-            Agotado
+            {t("soldOut")}
           </p>
         )}
 
         <Button
-            as="a"
-            href="/surftrips"
-            variant="secondary"
-            >
-            {("View all Trips")}
+          as="a"
+          href="/surftrips"
+          variant="secondary"
+        >
+          {t("viewAllTrips")}
         </Button>
+
 
 
       </div>

@@ -98,5 +98,33 @@
     "title": "Prêt pour votre prochaine aventure de surf ?",
     "description": "Réservez votre place, rejoignez le groupe WhatsApp d'organisation et commencez votre surf trip Antik avant même d'arriver à Asilah.",
     "button": "Réserver ma place"
+  },
+  "details":{
+      "description": "Una experiencia de surf completa que combina buenas olas, alojamiento confortable, gastronomía local y experiencias auténticas. Surfea, explora y disfruta de cada momento en un grupo reducido de personas con la misma pasión.",
+      "description2": "Pour toute question ou information concernant le voyage, n'hésitez pas à nous contacter via WhatsApp.",
+      "people": "Personnes",
+      "payNow": "Payez maintenant 50 %",
+      "payOnArrival": "Payez à l'arrivée",
+      "whatsIncluded": "Ce qui est inclus",
+      "included": {
+        "accommodation": "Hébergement",
+        "meals": "Repas (petit-déjeuner, déjeuner et dîner)",
+        "transport": "Transport vers la plage",
+        "surf": "Cours de surf et équipement",
+        "studio": "Studio Classic",
+        "experiences": "Expériences locales"
+      },
+      "notIncluded": "NON INCLUS",
+      "planSeparately": "À prévoir séparément",
+      "notIncludedItems": {
+        "flights": "Vols ou ferry vers le Maroc",
+        "alcohol": "Boissons alcoolisées",
+        "insurance": "Assurance médicale / voyage"
+      },
+      "adding": "Ajout...",
+      "added": "Ajouté ✓",
+      "addToCart": "Ajouter au panier",
+      "soldOut": "Épuisé",
+      "viewAllTrips": "Voir tous les trips"
   }
 }

@@ -98,5 +98,33 @@
     "title": "¿Listo para tu próximo surftrip?",
     "description": "Reserva tu plaza, únete al grupo de WhatsApp y empieza tu surftrip antes de llegar a Asilah.",
     "button": "Reserva tu plaza"
+  },
+  "details":{
+      "description": "Una experiencia de surf completa que combina buenas olas, alojamiento confortable, gastronomía local y experiencias auténticas. Surfea, explora y disfruta de cada momento en un grupo reducido de personas con la misma pasión.",
+      "description2": "Para cualquier duda o información sobre el viaje, no dudes en contactarnos por WhatsApp.",
+      "people": "Personas",
+      "payNow": "Paga ahora el 50%",
+      "payOnArrival": "Paga cuando llegues",
+      "whatsIncluded": "Qué incluye",
+      "included": {
+        "accommodation": "Alojamiento",
+        "meals": "Comidas (desayuno, comida y cena)",
+        "transport": "Transporte a la playa",
+        "surf": "Clases de surf y equipo",
+        "studio": "Estudio Classic",
+        "experiences": "Experiencias locales"
+      },
+      "notIncluded": "NO INCLUIDO",
+      "planSeparately": "Planifica esto por separado",
+      "notIncludedItems": {
+        "flights": "Vuelos o ferry a Marruecos",
+        "alcohol": "Bebidas alcohólicas",
+        "insurance": "Seguro médico / de viaje"
+      },
+      "adding": "Añadiendo...",
+      "added": "Añadido ✓",
+      "addToCart": "Añadir al carrito",
+      "soldOut": "Agotado",
+      "viewAllTrips": "Ver todos los trips"
   }
 }

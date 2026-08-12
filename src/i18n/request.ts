@@ -12,6 +12,7 @@ export default getRequestConfig(async ({requestLocale}) => {
   const schoolMessages = (await import (`./messages/school/${locale}.json`)).default;
   const surftripsMessages = (await import(`./messages/surftrips/${locale}.json`)).default;
   const eventsMessages = (await import(`./messages/events/${locale}.json`)).default;
+  const shopMessages = (await import(`./messages/shop/${locale}.json`)).default;
 
   return {
     locale,
@@ -20,7 +21,8 @@ export default getRequestConfig(async ({requestLocale}) => {
       home: homeMessages,
       school: schoolMessages,
       surftrips: surftripsMessages,
-      events: eventsMessages
+      events: eventsMessages,
+      shop: shopMessages
     }
   };
 });
