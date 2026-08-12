@@ -43,5 +43,10 @@
       "last 1 chrome version",
       "last 1 safari version"
     ]
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "@swc/core@1.15.47": true,
+    "unrs-resolver@1.12.2": true
   }
 }
