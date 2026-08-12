@@ -4,7 +4,7 @@ import Image from "next/image";
 import { PRODUCTS_BY_TYPE_QUERY } from "@/lib/shopify/queries"; 
 import { shopifyClient } from "@/lib/shopify/client";
 
-import styles from "./TripsScrollGrid.module.css";
+import styles from "./SurftripsScrollGrid.module.css";
 
 import Container from "@/components/ui/Container/Container";
 import Section from "@/components/layout/Section/Section";
