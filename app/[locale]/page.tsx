@@ -4,6 +4,7 @@ import TypeScrollGrid from "@/components/shop/components/TypeScrollGrid";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import SurfTripsScrollGrid from "@/components/surftrips/surftripscrollgrid/SurftripsScrollGrid";
+import School from "@/components/home/school/School"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("home.metadata");
@@ -20,6 +21,7 @@ export default function Page() {
       <Hero />
       <SurfTripsScrollGrid heading="SURF TRIPS >"  headingHref="/surftrips"/>
       <TypeScrollGrid type="tienda" heading="THE SHOP >" headingHref="/shop" />
+      <School></School>
     </>
   );
 }
