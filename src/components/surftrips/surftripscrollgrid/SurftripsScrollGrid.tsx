@@ -7,7 +7,6 @@ import { shopifyClient } from "@/lib/shopify/client";
 import styles from "./SurftripsScrollGrid.module.css";
 
 import Container from "@/components/ui/Container/Container";
-import Section from "@/components/layout/Section/Section";
 
 type Product = {
   id: string;
@@ -68,7 +67,7 @@ export default async function SurfTripsScrollGrid({
   
   return (
     <Container>
-      <Section>
+      <section className={styles.section}>
         {heading && (
           <h2 className={styles.heading}>
             {headingHref ? (
@@ -137,7 +136,7 @@ export default async function SurfTripsScrollGrid({
             );
           })}
         </div>
-      </Section>
+      </section>
     </Container>
   );
 }
