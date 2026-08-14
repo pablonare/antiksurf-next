@@ -4,7 +4,7 @@
     display: flex;
     align-items: flex-end;
 
-    min-height: 100vh;
+    height: 100vh;
 
     overflow: hidden;
 }
@@ -12,7 +12,8 @@
 
 .background {
     object-fit: cover;
-    object-position: center 45%;
+
+    object-position: center 40%;
 
     z-index: 0;
 }

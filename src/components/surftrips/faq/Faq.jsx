@@ -23,7 +23,7 @@ export default async function Faq() {
 
 
   return (
-    <Section>
+    <Section spacing="xlg">
       <Container>
 
         <header className={styles.header}>

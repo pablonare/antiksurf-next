@@ -1,8 +1,6 @@
 import Hero from "@/components/home/Hero/Hero";
-import Intro from "@/components/home/Intro/Intro";
-import UpcomingTrips from "@/components/home/UpcomingTrips/UpcomingTrips";
-import SurfLessons from "@/components/home/SurfLessons/SurfLessons";
-import Rentals from "@/components/home/Rentals/Rentals";
+import UpcomingTrips from "@/components/surftrips/upcomingtrips/UpcomingTrips";
+import School from "@/components/home/school/School"
 
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
@@ -20,10 +18,8 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <Intro />
       <UpcomingTrips />
-      <SurfLessons />
-      <Rentals />
+      <School />
     </>
   );
 }

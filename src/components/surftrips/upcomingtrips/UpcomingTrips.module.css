@@ -3,10 +3,12 @@
 
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 
     gap: 2rem;
+
 }
+
 .title {
     max-width: 750px;
 }
@@ -14,6 +16,10 @@
 @media (max-width: 768px) {
 
     .grid {
-        grid-template-columns:1fr;
+        grid-template-columns: none;
+        grid-auto-flow: column;
+        grid-auto-columns: 70%;
+        overflow-x: auto;
     }
+
 }

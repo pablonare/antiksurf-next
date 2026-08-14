@@ -1,43 +1,29 @@
 .card {
     display: flex;
     flex-direction: column;
-
     overflow: hidden;
-
-    border: 1px solid var(--card-border);
-    border-radius: var(--card-radius);
-
-    background: var(--card-paper);
-
-    box-shadow: var(--card-shadow);
-
-    transition:
-        transform var(--card-transition-fast),
-        box-shadow var(--card-transition-fast);
+    
 }
-
-
-.card:hover {
-    box-shadow: var(--card-shadow-strong);
-    transform: translateY(-8px);
-}
-
 
 .imageCard {
     position: relative;
-
     width: 100%;
-    aspect-ratio: 3.2 / 3;
-
+    aspect-ratio: 3 / 4;
     overflow: hidden;
+
+    border-radius: var(--card-radius);
 }
 
 
 .image {
     object-fit: cover;
     object-position: center 40%;
+    transition: transform 0.3s ease;
 }
 
+.image:hover {
+  transform: scale(1.04);
+}
 
 .body {
     display: flex;

@@ -2,31 +2,26 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
 import Container from "../../ui/Container/Container";
+import Section from "../../layout/Section/Section";
+
 import SplitSection from "../../layout/SplitSection/SplitSection";
-import LessonsImage from "../../../assets/images/index/lessons.webp";
+import RentalsImage from "../../../assets/images/index/rentals.webp";
+import RentalPricesImage from "../../../assets/images/index/rentals-prices.webp";
 import Button from "../../ui/Button/Button";
 
-import lessons from "./lessons";
-import Accordion from "../../ui/Accordion/Accordion";
-import styles from "./SurfLessons.module.css";
+import styles from "./Rentals.module.css";
 
-export default async function SurfLessons() {
-  const t = await getTranslations("home.surfLessons");
-
-  const translatedLessons = lessons.map((lesson) => ({
-    title: t(lesson.title),
-    content: lesson.content.map((item) => t(item)),
-  }));
+export default async function Rentals() {
+  const t = await getTranslations("school.rentals");
 
   return (
-    <section className={styles.section}>
+    <Section spacing="lg">
       <Container>
-
-        <SplitSection reverse={true}>
+        <SplitSection reverse={false} mobileReverse={true}>
 
           <div className={styles.media}>
             <Image
-              src={LessonsImage}
+              src={RentalsImage}
               alt={t("imageAlt")}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -44,7 +39,14 @@ export default async function SurfLessons() {
               {t("description")}
             </p>
 
-            <Accordion items={translatedLessons} />
+            <Image
+              className={styles.contentImage}
+              src={RentalPricesImage}
+              alt={t("pricesImageAlt")}
+              width={500}
+              height={300}
+              sizes="(max-width: 768px) 100vw, 500px"
+            />
 
             <div className={styles.actions}>
               <Button
@@ -59,8 +61,7 @@ export default async function SurfLessons() {
           </div>
 
         </SplitSection>
-
       </Container>
-    </section>
+    </Section>
   );
 }

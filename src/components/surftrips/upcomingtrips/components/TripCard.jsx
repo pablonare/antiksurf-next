@@ -32,23 +32,19 @@ export default async function TripCard({
 
       <div className={styles.body}>
 
-        <p className={styles.date}>
-          {t(date)}
-        </p>
-
         <h3 className={styles.title}>
           {t(title)}
         </h3>
+
+        <p className={styles.date}>
+          {t(date)}
+        </p>
 
         {price && (
           <p className={styles.price}>
             {t(price)}
           </p>
         )}
-
-        <p className={styles.meta}>
-          {t(meta)}
-        </p>
 
         {status === "full" ? (
           <span className={styles.badge}>

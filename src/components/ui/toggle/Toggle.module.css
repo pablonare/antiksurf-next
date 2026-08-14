@@ -1,0 +1,57 @@
+.toggle {
+  width: 100%;
+  /* border-top: 1px solid currentColor; */
+}
+
+.toggle:last-child {
+  border-bottom: 1px solid currentColor;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+  padding: 20px 0;
+}
+
+.header::-webkit-details-marker {
+  display: none;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 1px;
+  background: currentColor;
+  transform: translate(-50%, -50%);
+}
+
+.icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.toggle[open] .icon::after {
+  opacity: 0;
+}
+
+.content {
+  padding-bottom: 40px;
+}

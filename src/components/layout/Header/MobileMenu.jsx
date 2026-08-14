@@ -54,13 +54,14 @@ function MobileMenu() {
         <nav className={styles.navigation}>
           <Link href="/" onClick={() => setIsOpen(false)}>
             {t("home")}
-            <span className="nav__subtitle">
-              {" "} | {t("lessonsAndRentals")}
-            </span>
           </Link>
 
           <Link href="/surftrips" onClick={() => setIsOpen(false)}>
             {t("trips")}
+          </Link>
+          
+          <Link href="/school" onClick={() => setIsOpen(false)}>
+            Lessons & Rentals
           </Link>
 
           <Link href="/events" onClick={() => setIsOpen(false)}>

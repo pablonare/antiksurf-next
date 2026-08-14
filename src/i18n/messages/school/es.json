@@ -1,0 +1,44 @@
+{
+  "surfLessons": {
+    "title": "Clases de Surf",
+    "description": "Nuestras clases de surf están diseñadas para todos los niveles, desde principiantes hasta surfistas experimentados. Cada sesión incluye teoría, práctica en el agua y correcciones personalizadas.",
+    "button": "Reservar clases de surf",
+    "imageAlt": "Clases de surf en Marruecos",
+    "lessons": {
+      "lesson1": {
+        "title": "CLASES DE SURF (2 HORAS)",
+        "content1": "1 clase 300DH",
+        "content2": "2 clases 600DH",
+        "content3": "3 clases 850DH",
+        "content4": "4 clases 1100DH",
+        "content5": "5 clases 1300DH",
+        "content6": "4 o más personas 1250DH",
+        "content7": "Las clases de más de 7 días deben consultarse."
+      },
+      "lesson2": {
+        "title": "CLASES PRIVADAS DE SURF",
+        "content1": "Consultar disponibilidad y precios",
+        "content2": "antiksurfclub@gmail.com",
+        "content3": "+212 644-078565"
+      },
+      "lesson3": {
+        "title": "SERVICIO DE FOTOGRAFÍA EN EL AGUA",
+        "content1": "Llévate los mejores recuerdos de tu experiencia",
+        "content2": "Reserva ahora por 150DH"
+      }
+    }
+  },
+  "rentals": {
+    "title": "Alquiler de tablas de surf",
+    "description": "Ofrecemos una amplia variedad de tablas de surf en alquiler, adaptadas a todos los niveles. Nuestro servicio incluye tablas de calidad, neoprenos y accesorios para que disfrutes de la mejor experiencia de surf.",
+    "button": "Contáctanos",
+    "imageAlt": "Alquiler de tablas de surf en Marruecos",
+    "pricesImageAlt": "Precios del alquiler de tablas de surf"
+  },
+  "quiver": {
+  "title": "Nuestras tablas",
+  "description": "En cuanto a las tablas, contamos con una selección de shapers reconocidos como Peta, Longwinter y Adrokultura, además de shapers como Gato Heroi y Tom Morat. También contamos con una amplia variedad de softboards de 8'8 para disfrutar de cada sesión.",
+  "imageAlt": "Tablas de surf en Marruecos",
+  "pricesImageAlt": "Precios del alquiler de tablas de surf"
+ }
+}

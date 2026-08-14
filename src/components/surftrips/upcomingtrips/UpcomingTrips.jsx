@@ -15,10 +15,6 @@ export default async function UpcomingTrips() {
     <Section>
       <Container>
 
-        <p className="section-kicker">
-          {t("kicker")}
-        </p>
-
         <h2 className={`section-title ${styles.title}`}>
           {t("title")}
         </h2>
