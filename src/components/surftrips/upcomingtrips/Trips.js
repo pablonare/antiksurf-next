@@ -6,6 +6,7 @@ import card4Dec from "../../../assets/images/surftrips/cards/card-4dec.webp";
 const trips = [
   {
     id: 1,
+    slug: "1",
     image: card4Sept,
     alt: "trips.trip1.alt",
     date: "trips.trip1.date",
@@ -18,6 +19,7 @@ const trips = [
   },
   {
     id: 2,
+    slug: "2",
     image: card29Sept,
     alt: "trips.trip2.alt",
     date: "trips.trip2.date",
@@ -30,6 +32,7 @@ const trips = [
   },
   {
     id: 3,
+    slug: "3",
     image: card9Oct,
     alt: "trips.trip3.alt",
     date: "trips.trip3.date",
@@ -42,6 +45,7 @@ const trips = [
   },
   {
     id: 4,
+    slug: "4",
     image: card4Dec,
     alt: "trips.trip4.alt",
     date: "trips.trip4.date",

@@ -5,7 +5,7 @@ import styles from "./Accordion.module.css";
 
 function Accordion({ items }) {
 
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(null);
 
   return (
     <div className={styles.accordion}>

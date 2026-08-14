@@ -29,12 +29,19 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-
+    
     padding: 1.5rem;
-    gap: 0.7rem;
+    gap: 0.3rem;
+}
+
+.date{
+    color: #666;
+}
+.price{
+    color: #666;
 }
 
 
-.body > :last-child {
+/* .body > :last-child {
     margin-top: auto;
-}
+} */

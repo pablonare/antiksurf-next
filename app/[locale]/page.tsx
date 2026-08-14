@@ -18,7 +18,7 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <UpcomingTrips />
+      <UpcomingTrips titleHref="/surftrips" />
       <School />
     </>
   );

@@ -4,7 +4,10 @@ import { getTranslations } from "next-intl/server";
 import Button from "../../../../components/ui/Button/Button";
 import styles from "./TripCard.module.css";
 
+import Link from "next/link";
+
 export default async function TripCard({
+  slug,
   image,
   alt,
   date,
@@ -20,15 +23,17 @@ export default async function TripCard({
   return (
     <article className={styles.card}>
 
-      <div className={styles.imageCard}>
-        <Image
-          className={styles.image}
-          src={image}
-          alt={t(alt)}
-          fill
-          sizes="(max-width: 768px) 90vw, 25vw"
-        />
-      </div>
+      <Link href={`/surftrips/${slug}`}>
+        <div className={styles.imageCard}>
+          <Image
+            className={styles.image}
+            src={image}
+            alt={t(alt)}
+            fill
+            sizes="(max-width: 768px) 90vw, 25vw"
+          />
+        </div>
+      </Link>
 
       <div className={styles.body}>
 
@@ -46,7 +51,7 @@ export default async function TripCard({
           </p>
         )}
 
-        {status === "full" ? (
+        {/* {status === "full" ? (
           <span className={styles.badge}>
             {t("full")}
           </span>
@@ -58,7 +63,7 @@ export default async function TripCard({
           >
             {t(buttonText)}
           </Button>
-        )}
+        )} */}
 
       </div>
 

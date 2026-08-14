@@ -13,6 +13,12 @@
     max-width: 750px;
 }
 
+.titleLink {
+  color: inherit;
+  text-decoration: underline;
+  color:var(--color-primary);
+}
+
 @media (max-width: 768px) {
 
     .grid {

@@ -12,17 +12,23 @@
   },
   "upcomingTrips": {
     "title": "Próximos Trips",
-    "full": "",
+    "full": "Full",
     "available": "Disponible",
     "bookNow": "Reservar",
     "moreInfo": "Visitar web",
-
+    "buttonViewAll": "View All Trips",
+    "details":{
+      "description": "Una experiencia de surf completa que combina buenas olas, alojamiento confortable, gastronomía local y experiencias auténticas. Surfea, explora y disfruta de cada momento en un grupo reducido de personas con la misma pasión.",
+      "description2": "Para cualquier duda o información sobre el viaje, no dudes en contactarnos por WhatsApp.",
+      "payNow": "Pagar ahora: 50%",
+      "payOnArrival": "Pagar a la llegada: 50%"
+    },
     "trips": {
       "trip1": {
         "alt": "Portada del surf trip del 4 al 7 de septiembre de 2026",
         "date": "4–7 de septiembre de 2026",
         "title": "Trip Antik",
-        "price": "475€ antes del 1 de agosto • 545€ precio normal"
+        "price": "Completo"
       },
       "trip2": {
         "alt": "Portada del surf trip del 29 de septiembre al 4 de octubre de 2026",

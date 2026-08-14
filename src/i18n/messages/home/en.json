@@ -4,41 +4,8 @@
   "description": "Surf lessons, surf trips and unforgettable experiences in Asilah, Morocco."
   },
   
-  "intro": {
-    "description": "Antik Surf Club is situated in the heart of the Asilah medina, close to some of the best surf spots in the north of Morocco. At Antik, you'll find surf lessons, action-packed boards, and surf trips that take you straight to the essence."
-  },
-  "upcomingTrips": {
-    "title": "Upcoming Surftrips 2026",
-    "subtitle": "Join our Surf Trips in Asilah, Morocco",
-    "dates": "Dates",
-    "full": "Full",
-    "available": "Available",
-    "viewTrips": "View All Trips",
-    "bookNow": "Book Now",
-    "imageAlt": "Surf trips in Asilah Morocco",
-
-    "trips": {
-      "trip1": {
-        "dates": "September 4–7",
-        "name": "Trip Antik",
-        "status": "Full"
-      },
-      "trip2": {
-        "dates": "September 29 – October 4",
-        "name": "Trip Antik x It's Only Water",
-        "status": "Available spots"
-      },
-      "trip3": {
-        "dates": "October 9–12",
-        "name": "Trip Antik",
-        "status": "Available spots"
-      },
-      "trip4": {
-        "dates": "December 4–8",
-        "name": "Trip Antik",
-        "status": "Available spots"
-      }
-    }
+  "school": {
+    "school": "Lessons & Rentals"
   },
   
   "surfLessons": {

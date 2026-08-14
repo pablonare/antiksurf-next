@@ -1,0 +1,114 @@
+.wrapper {
+  padding-block: 120px;
+  padding-inline: 50px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.75rem;
+}
+
+.date {
+  font-size: 1rem;
+  margin-top: -0.5rem;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.price p {
+  margin: 0;
+}
+
+.price small {
+  display: block;
+}
+
+.description {
+  margin-block: 15px;
+}
+
+.included {
+  margin-block: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.included h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.included ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.included li {
+  margin-bottom: 2px;
+}
+
+.notIncluded {
+  margin-top: 2px;
+  text-align: center;
+}
+
+.notIncluded p {
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.notIncluded h4 {
+  font-size: 14px;
+  margin-bottom:10px;
+  font-weight: 500;
+}
+
+.notIncluded ul {
+  font-size: 14px;
+  margin: 0;
+  padding-left: 18px;
+}
+.badge{
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    padding-inline: 20px;
+    padding-block: 100px;
+  }
+}
