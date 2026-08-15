@@ -1,8 +1,6 @@
 import { getTranslations } from "next-intl/server";
 
 import Container from "../../../components/ui/Container/Container";
-import Section from "../../../components/layout/Section/Section";
-
 
 import styles from "./Included.module.css";
 
@@ -25,7 +23,7 @@ export default async function Included() {
   ];
 
   return (
-    <Section spacing="xlg">
+    <section className={styles.section}>
       <Container>
 
         <header className="section-title">
@@ -55,6 +53,6 @@ export default async function Included() {
         </aside>
 
       </Container>
-    </Section>
+    </section>
   );
 }

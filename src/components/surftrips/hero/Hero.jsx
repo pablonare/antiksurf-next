@@ -41,6 +41,22 @@ export default async function Hero() {
             {t("subtitle")}
           </p>
 
+          <div className={styles.actions}>
+
+            {/* <Button href="#upcoming-trips">
+              {t("viewTrips")}
+            </Button> */}
+
+            <Button
+              as="a"
+              href="https://wa.me/212644078565"
+              variant="tertiary"
+            >
+              {t("bookNow")}
+            </Button>
+
+          </div>
+
         </div>
       </Container>
 

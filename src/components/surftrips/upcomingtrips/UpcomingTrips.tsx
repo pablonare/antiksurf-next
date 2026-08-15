@@ -10,6 +10,7 @@ import styles from "./UpcomingTrips.module.css";
 
 type UpcomingTripsProps = {
   titleHref?: string;
+  titleKey?: string;
 };
 
 export default async function UpcomingTrips({
@@ -25,7 +26,7 @@ export default async function UpcomingTrips({
 
   return (
     <div id="upcoming-trips">
-      <Section>
+      <Section spacing="lg">
         <Container>
 
           {titleHref ? (

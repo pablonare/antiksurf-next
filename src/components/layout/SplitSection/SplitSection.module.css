@@ -14,12 +14,20 @@
 }
 
 @media (max-width: 768px) {
-    .layout {
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
-    }
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
 
-    .reverse {
-        direction: ltr;
-    }
+  .reverse {
+    direction: ltr;
+  }
+
+  .mobileReverse > *:first-child {
+    order: 2;
+  }
+
+  .mobileReverse > *:last-child {
+    order: 1;
+  }
 }
