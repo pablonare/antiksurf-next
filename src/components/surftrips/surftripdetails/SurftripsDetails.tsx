@@ -54,6 +54,10 @@ export default async function SurftripDetails({
           {t(trip.date)}
         </p>
 
+        <p className={styles.date}>
+          {t("details.location")}
+        </p>
+
         {trip.price && (
           <div className={styles.price}>
             <p>

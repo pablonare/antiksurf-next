@@ -21,7 +21,8 @@
       "description": "Una experiencia de surf completa que combina buenas olas, alojamiento confortable, gastronomía local y experiencias auténticas. Surfea, explora y disfruta de cada momento en un grupo reducido de personas con la misma pasión.",
       "description2": "Para cualquier duda o información sobre el viaje, no dudes en contactarnos por WhatsApp.",
       "payNow": "Pagar ahora: 50%",
-      "payOnArrival": "Pagar a la llegada: 50%"
+      "payOnArrival": "Pagar a la llegada: 50%",
+      "location":"Asilah, Marruecos"
     },
     "trips": {
       "trip1": {
