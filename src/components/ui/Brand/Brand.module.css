@@ -19,6 +19,13 @@
   white-space: nowrap;
 }
 
+.brand h2{
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  transform: translateY(-5px);
+  /* letter-spacing: */
+}
 
 .brand:hover {
     font-size: clamp(1.2rem, 1.6vw, 3rem);

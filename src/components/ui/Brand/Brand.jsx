@@ -5,6 +5,7 @@ function Brand() {
   return (
     <Link href="/" className={styles.brand}>
       <h1>ANTIK SURF CLUB</h1>
+      <h2>Asilah Morocco</h2>
     </Link>
   );
 }
