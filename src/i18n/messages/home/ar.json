@@ -6,6 +6,10 @@
   "school": {
     "school": "الدروس والتأجير"
   },
+
+  "events": {
+    "title": "الفعاليات"
+  },
   
   "surfLessons": {
     "title": "دروس ركوب الأمواج",

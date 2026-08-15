@@ -50,21 +50,7 @@ export default async function TripCard({
             {t(price)}
           </p>
         )}
-
-        {/* {status === "full" ? (
-          <span className={styles.badge}>
-            {t("full")}
-          </span>
-        ) : (
-          <Button
-            href={buttonLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {t(buttonText)}
-          </Button>
-        )} */}
-
+        
       </div>
 
     </article>

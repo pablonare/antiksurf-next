@@ -5,6 +5,9 @@
   "school": {
    "school": "Cours et Locations"
   },
+  "events": {
+    "title": "Événements"
+  },
   "surfLessons": {
     "title": "Cours de Surf",
     "description": "Nos cours de surf sont conçus pour tous les niveaux, des débutants aux surfeurs expérimentés. Chaque session comprend de la théorie, de la pratique dans l'eau et des corrections personnalisées.",

@@ -20,4 +20,6 @@
   --card-transition-slow: 0.6s ease;
   --card-transition-fast: 0.25s ease;
   --card-radius: 15px;
+
+  --image-radius: 5px;
 }

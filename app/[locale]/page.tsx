@@ -1,6 +1,7 @@
 import Hero from "@/components/home/Hero/Hero";
 import UpcomingTrips from "@/components/surftrips/upcomingtrips/UpcomingTrips";
 import School from "@/components/home/school/School"
+import Events from "@/components/home/events/Events"
 
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
@@ -20,6 +21,7 @@ export default function Page() {
       <Hero />
       <UpcomingTrips titleHref="/surftrips" />
       <School />
+      <Events />
     </>
   );
 }

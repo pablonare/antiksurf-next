@@ -16,7 +16,7 @@
     "available": "Available",
     "bookNow": "Book Now",
     "moreInfo": "Visit Website",
-    "ViewAll": "View All Trips",
+    "buttonViewAll": "View All Trips",
 
     "details":{
       "description":"A complete surf experience combining great waves, comfortable accommodation, local food and authentic experiences. Surf, explore and enjoy every moment with a small group of like-minded people.",
@@ -30,28 +30,24 @@
         "alt": "Trip cover for September 4–7, 2026",
         "date": "September 4–7, 2026",
         "title": "Trip Antik",
-        "price": "Full",
-        "meta": "4 days · Currently full"
+        "price": "Full"
       },
       "trip2": {
         "alt": "Trip cover for September 29 – October 4, 2026",
         "date": "September 29 – October 4, 2026",
-        "title": "Trip Antik × It's Only Water",
-        "meta": "6 days · Available spots"
+        "title": "Trip Antik × It's Only Water"
       },
       "trip3": {
         "alt": "Trip cover for October 9–12, 2026",
         "date": "October 9–12, 2026",
         "title": "Trip Antik",
-        "price": "475€ before August 1 • 545€ regular",
-        "meta": "4 days · Available spots"
+        "price": "545€"
       },
       "trip4": {
         "alt": "Trip cover for December 4–8, 2026",
         "date": "December 4–8, 2026",
         "title": "Trip Antik",
-        "price": "580€ before October 1 • 650€ regular",
-        "meta": "5 days · Available spots"
+        "price": "650€ (580€ before October 1)"
       }
 
     }

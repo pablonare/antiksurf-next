@@ -31,7 +31,6 @@ export default async function SurftripDetails({
 
   return (
     <div className={styles.wrapper}>
-
       <div className={styles.gallery}>
         <div className={styles.imageWrapper}>
           <Image
@@ -39,6 +38,7 @@ export default async function SurftripDetails({
             alt={t(trip.alt)}
             fill
             className={styles.image}
+            sizes="(max-width: 768px) 90vw, 25vw"
             priority
           />
         </div>
@@ -131,11 +131,10 @@ export default async function SurftripDetails({
         <Button
             as="a"
             href="/surftrips"
-            target="_blank"
+            variant="secondary"
             rel="noopener noreferrer"
           >
             {t("buttonViewAll")}
-            {/* {"View All Trips"} */}
         </Button>
         
       </div>

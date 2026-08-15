@@ -103,7 +103,7 @@ export default async function RootLayout({
   const hasLocale = !!cookieStore.get("NEXT_LOCALE");
 
   return (
-    <html lang={locale}>
+    <html lang={locale}data-scroll-behavior="smooth" >
       <body>
         <NextIntlClientProvider messages={messages}>
 

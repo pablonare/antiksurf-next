@@ -6,7 +6,7 @@
 
     overflow: hidden;
 
-    border-radius: var(--card-radius);
+    border-radius: var(--image-radius);
 }
 
 

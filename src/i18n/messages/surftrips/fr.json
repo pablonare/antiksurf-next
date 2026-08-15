@@ -18,7 +18,7 @@
     "available": "Disponible",
     "bookNow": "Réserver",
     "moreInfo": "Visiter web",
-    "buttonViewAll": "View All Trips",
+    "buttonViewAll": "Voir tous les trips",
     "details":{
       "description": "Una experiencia de surf completa que combina buenas olas, alojamiento confortable, gastronomía local y experiencias auténticas. Surfea, explora y disfruta de cada momento en un grupo reducido de personas con la misma pasión.",
       "description2": "Pour toute question ou information concernant le voyage, n'hésitez pas à nous contacter via WhatsApp.",
@@ -43,14 +43,14 @@
         "alt": "Couverture du surf trip du 9 au 12 octobre 2026",
         "date": "9–12 octobre 2026",
         "title": "Trip Antik",
-        "price": "475€ avant le 1er août • 545€ tarif normal",
+        "price": "545€",
         "meta": "4 jours · Places disponibles"
       },
       "trip4": {
         "alt": "Couverture du surf trip du 4 au 8 décembre 2026",
         "date": "4–8 décembre 2026",
         "title": "Trip Antik",
-        "price": "580€ avant le 1er octobre • 650€ tarif normal",
+        "price": "650€ (580€ avant le 1er octobre)",
         "meta": "5 jours · Places disponibles"
       }
     }

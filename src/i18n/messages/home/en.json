@@ -8,6 +8,10 @@
     "school": "Lessons & Rentals"
   },
   
+  "events": {
+    "title": "Events"
+  },
+
   "surfLessons": {
     "title": "Surf Lessons",
     "description": "Our surf lessons are designed for all levels, from beginners to experienced surfers. Each session includes theory, in-water practice, and personalized corrections.",
