@@ -1,7 +1,7 @@
 import card4Sept from "../../../assets/images/surftrips/cards/card-4sept.webp";
 import card29Sept from "../../../assets/images/surftrips/cards/card-29sept.webp";
-import card9Oct from "../../../assets/images/surftrips/cards/card-9oct.webp";
-import card4Dec from "../../../assets/images/surftrips/cards/card-4dec.webp";
+import card9Oct from "../../../assets/images/surftrips/cards/surftrip9oct.webp";
+import card4Dec from "../../../assets/images/surftrips/cards/surftrip4dec.webp";
 
 const trips = [
   {

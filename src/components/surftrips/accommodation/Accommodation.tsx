@@ -10,6 +10,7 @@ import accommodation2 from "../../../assets/images/surftrips/accommodation/accom
 import accommodation3 from "../../../assets/images/surftrips/accommodation/accommodation_3.webp";
 import accommodation4 from "../../../assets/images/surftrips/accommodation/accommodation_4.webp";
 
+
 import styles from "./Accommodation.module.css";
 
 export default async function Accommodation() {
