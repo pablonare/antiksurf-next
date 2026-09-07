@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "title": "Hébergements",
+    "description": "Découvrez nos hébergements et trouvez la maison idéale pour votre séjour près de l'océan avec Antik Surf Club."
+  },
+  "antikriad": {
+  "title": "Riad Fadua",
+  "description": {
+    "paragraph1": "Découvrez le charme du Riad Fadua, un riad traditionnel spacieux et accueillant conçu pour vous faire sentir comme chez vous.",
+    "paragraph2": "Le riad dispose de quatre chambres et de trois salles de bains, réparties sur deux étages. Au rez-de-chaussée, vous trouverez deux chambres doubles, chacune avec sa propre salle de bains. À l'étage, il y a une chambre double, une chambre avec deux lits simples et une salle de bains supplémentaire.",
+    "paragraph3": "Avec son caractère traditionnel, ses espaces confortables et son atmosphère authentique, le Riad Fadua est l'endroit idéal pour se détendre, partager des moments inoubliables et découvrir le charme du Maroc."
+  },
+  "imageAlt": "Antik Riad",
+  "button": "Réserver maintenant"
+ },
+ "apartamento": {
+  "title": "Appartement d'une Chambre",
+  "description": {
+    "paragraph1": "Profitez d'un espace chaleureux et paisible spécialement conçu pour les couples, avec tout le nécessaire pour un séjour confortable et relaxant.",
+    "paragraph2": "L'appartement dispose d'une chambre double et d'une salle de bains, ainsi que d'un espace chaleureux où vous pourrez vous détendre et profiter pleinement de votre séjour. Sa configuration en fait un choix idéal pour une escapade en couple.",
+    "paragraph3": "Avec son atmosphère intime, confortable et authentique, cet appartement est l'endroit idéal pour se déconnecter, partager des moments privilégiés et découvrir le charme du Maroc."
+  },
+  "ImageAlt": "Appartement d'une Chambre",
+  "button": "Réserver maintenant"
+ }
+
+}

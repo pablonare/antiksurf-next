@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "title": "Accommodations",
+    "description": "Discover our accommodations and find the perfect house for your stay near the ocean with Antik Surf Club."
+  },
+  
+  "antikriad": {
+    "title": "Riad Fadua",
+    "description": {
+    "paragraph1": "Discover the charm of Riad Fadua, a spacious and welcoming traditional riad designed to make you feel at home.",
+    "paragraph2": "The riad features four bedrooms and three bathrooms, distributed across two floors. On the ground floor, you will find two double bedrooms, each with its own bathroom. Upstairs, there is one double bedroom, one twin bedroom, and an additional bathroom.",
+    "paragraph3": "With its traditional character, comfortable spaces and authentic atmosphere, Riad Fadua is the perfect place to relax, share unforgettable moments and experience the charm of Morocco."
+    },
+    "imageAlt": "Antik Riad",
+    "button": "Book now"
+  },
+
+  "apartamento": {
+  "title": "One Bedroom Apartment",
+  "description": {
+    "paragraph1": "Enjoy a cosy and peaceful space specially designed for couples, with everything you need for a comfortable and relaxing stay.",
+    "paragraph2": "The apartment features one double bedroom and one bathroom, as well as a welcoming living space where you can relax and enjoy your stay. Its layout makes it an ideal choice for a romantic getaway.",
+    "paragraph3": "With its intimate, comfortable and authentic atmosphere, this apartment is the perfect place to disconnect, share special moments and discover the charm of Morocco."
+  },
+  "imageAlt": "One Bedroom Apartment",
+  "button": "Book now"
+ }
+}

@@ -1,0 +1,60 @@
+.title {
+
+  padding-top:10vh;
+  padding-bottom: 2vh;
+
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+
+.card {
+  overflow: hidden;
+  border-radius: var(--image-radius);
+  aspect-ratio: 3 / 4;
+}
+
+
+.image {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  object-fit: cover;
+
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.lightboxImage {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: var(--card-radius);
+    object-fit: contain;
+}
+.actions {
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+
+    .gallery {
+     gap: 10px;
+     padding-block: 30px; 
+     padding-inline: 20px;
+    }
+
+}
